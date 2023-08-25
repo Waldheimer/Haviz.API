@@ -1,9 +1,9 @@
 # Shared Data Libraray v1.01
 
 Shared Data Libraray for Interaction between API and Unity
-> - [x] LogEntry
+> - [x] LogEntry  
     Represents an Entry in the Homeassistant-Logbook
-> - [x] Entity
+> - [x] Entity  
     Represents an Entity in Homeassistant
-> - [x] AutomationStateEntry
+> - [x] AutomationStateEntry  
     Represents an Entry in the Homeassistant-States
