@@ -1,0 +1,71 @@
+- [x] HAViz.API
+    - [x] Controllers
+        - [x] LogbookController
+            - [x] **/api/logbook** : Complete Logbook
+            - [x] **/api/logbook/filtered** : Only Entries from selected Entities/Automations
+        - [x] EntitiesController
+            - [x] **/api/entities** : All available Entities
+            - [x] **/api/entities/filtered** : Only selected Entities
+            - [x] **/api/entities/list** : Only the Names of all availiable Entities
+            - [x] **/api/entities/states** : States of all available Entitites
+            - [x] **/api/entities/id** : Only the State of the Entity with given id
+        - [x] AutomationsController
+            - [x] **/api/automations** : Get the Names of all available Automations
+            - [x] **/api/automations/states** : Get the States of all available Automations 
+            - [x] **/api/automations/yaml/name** : Get the ID of the Automation with the given name, then get the YAML-Representation of the Automation with the returned id
+    - [x] Services
+        - [x] IHA_DataService
+        - [x] HA_DataService
+            - [x] LogBook
+                - [x] **async Task<IEnumerable<LogEntry>>** GetLogAsync()
+                - [x] **async Task<IEnumerable<LogEntry>>** GetFilteredLogAsync()
+            - [x] Entities
+                - [x] **List<string>** GetEntityFilter()
+                - [x] **async Task<IEnumerable<Entity>>** GetAllEntitiesAsync()
+                - [x] **async Task<IEnumerable<Entity>>** GetFilteredEntitiesAsync(List<tring> filters)
+                - [x] **async Task<IEnumerable<string>>** GetAllEntityNamesAsync()
+                - [x] **async Task<Entity>** GetEntityInfoAsync(string id)
+                - [x] **async Task<IEnumerable<AutomationStateEntry>>** GetEntityStatesAsync()
+            - [x] Automations
+                - [x] **async Task<IEnumerable<string>>** GetAllAutomationsAsync()
+                - [x] **async Task<IEnumerable<AutomationStateEntry>>** GetAutomationStatesAsync()
+                - [x] **async Task<string>** GetAutomationIdByName(string name)
+                - [x] **async Task<string>** GetAutomationYamlAsync(string id)
+        - [x] HA_MockService
+- [x] HAViz.Shared
+    - [x] Models
+        - [x] LogEntry
+        - [x] Entity
+        - [x] Automation
+        - [x] YamlDefintion
+        - [x] Trigger
+        - [x] Condition
+        - [x] Action
+        - [x] For
+        - [x] Data
+        - [x] Target
+        - [x] AutomationStateEntry
+        - [x] AutomationByEvent
+        - [x] EventByAutomation
+        - [x] NoAction
+
+- [!] UnityProject
+    - [x] Entities
+        - [x] Load all Entities
+        - [x] Display all Entities in a Circle at the Center
+        - [x] Make Entitites Clickable / Drag-Dropable
+        - [x] Show Entity_Id above the Dummy
+            - [x] Always turn Text to face camera
+    - [!] Events
+        - [x] Load all Events
+        - [x] Divide Events in NoAction/Automation-Events
+            - [!] NoAction Events
+                - [x] Draw a Line between the Event-Entity to the Home Entity
+                - [!] Indicate the Information-Flow from the Event Entity to the Home Entity
+            - [!] Automation Events
+                - [x] Get the YAML Definition of the Automation
+                - [x] Get a List of all Trigger/Conditions/Actions
+                - [x] Calculate a Probability for each Condition of beeing responsible for the Execution of the Automation
+                - [x] Draw a Line for each Trigger/Action/Condition
+                - [x] Colorize the different Parts of the Automation
+                - [!] Indicate the Information-Flow Direction
