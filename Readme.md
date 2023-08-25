@@ -1,3 +1,9 @@
+# API & SharedData Library
+
+> The .json Files need to be in an accessable Place and the the Location has to updated in the appsettings.json 
+> like "API_Mock_URL": "D:/Data/" for the API Project to run.
+
+
 - [x] HAViz.API
     - [x] Controllers
         - [x] LogbookController
