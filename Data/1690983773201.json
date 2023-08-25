@@ -1,0 +1,36 @@
+{
+    "id": "1690983773201",
+    "alias": "ClickCounter10",
+    "description": "",
+    "trigger": [
+        {
+            "platform": "state",
+            "entity_id": [
+                "input_boolean.switch01"
+            ]
+        },
+        {
+            "platform": "state",
+            "entity_id": [
+                "input_boolean.switch02"
+            ]
+        },
+        {
+            "platform": "state",
+            "entity_id": [
+                "input_boolean.switch03"
+            ]
+        }
+    ],
+    "condition": [],
+    "action": [
+        {
+            "service": "counter.increment",
+            "data": {},
+            "target": {
+                "entity_id": "counter.klickcounter"
+            }
+        }
+    ],
+    "mode": "single"
+}

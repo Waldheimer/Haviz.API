@@ -1,0 +1,202 @@
+[
+    {
+        "id": "1690980211843",
+        "alias": "PowerByButton",
+        "description": "Press Button for 5 sek to toggle PowerSwitch",
+        "trigger": [
+            {
+                "platform": "state",
+                "entity_id": [
+                    "input_button.button01"
+                ],
+                "for": {
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 5
+                }
+            }
+        ],
+        "condition": [
+            {
+                "condition": "or",
+                "conditions": [
+                    {
+                        "condition": "state",
+                        "entity_id": "input_boolean.switch02",
+                        "state": "on"
+                    },
+                    {
+                        "condition": "state",
+                        "entity_id": "input_boolean.switch03",
+                        "state": "on"
+                    }
+                ]
+            }
+        ],
+        "action": [
+            {
+                "type": "toggle",
+                "device_id": "ddef604f97f3b78eb731824263bdfc19",
+                "entity_id": "switch.tz3000_2putqrmw_ts011f_switch",
+                "domain": "switch"
+            }
+        ],
+        "mode": "single"
+    },
+    {
+        "id": "1690981881758",
+        "alias": "MotionPowerOn",
+        "description": "",
+        "trigger": [
+            {
+                "type": "motion",
+                "platform": "device",
+                "device_id": "10f803010844988b0cb1b7439052b79e",
+                "entity_id": "binary_sensor.motion_red_iaszone_2",
+                "domain": "binary_sensor"
+            }
+        ],
+        "condition": [
+            {
+                "condition": "or",
+                "conditions": [
+                    {
+                        "condition": "or",
+                        "conditions": [
+                            {
+                                "condition": "state",
+                                "entity_id": "input_boolean.switch02",
+                                "state": "on"
+                            },
+                            {
+                                "condition": "state",
+                                "entity_id": "input_boolean.switch03",
+                                "state": "on"
+                            }
+                        ]
+                    },
+                    {
+                        "condition": "state",
+                        "entity_id": "input_boolean.switchA",
+                        "state": "off"
+                    }
+                ]
+            }
+        ],
+        "action": [
+            {
+                "type": "turn_on",
+                "device_id": "ddef604f97f3b78eb731824263bdfc19",
+                "entity_id": "switch.tz3000_2putqrmw_ts011f_switch",
+                "domain": "switch"
+            }
+        ],
+        "mode": "single"
+    },
+    {
+        "id": "1690982045934",
+        "alias": "V50Switch01",
+        "description": "",
+        "trigger": [
+            {
+                "platform": "state",
+                "entity_id": [
+                    "counter.klickcounter"
+                ],
+                "to": "10"
+            }
+        ],
+        "condition": [],
+        "action": [
+            {
+                "type": "turn_on",
+                "device_id": "ddef604f97f3b78eb731824263bdfc19",
+                "entity_id": "switch.tz3000_2putqrmw_ts011f_switch",
+                "domain": "switch"
+            },
+            {
+                "service": "counter.reset",
+                "data": {},
+                "target": {
+                    "entity_id": "counter.klickcounter"
+                }
+            }
+        ],
+        "mode": "single"
+    },
+    {
+        "id": "1690982151047",
+        "alias": "AllOffPowerOff",
+        "description": "",
+        "trigger": [
+            {
+                "platform": "state",
+                "entity_id": [
+                    "input_button.button01"
+                ]
+            }
+        ],
+        "condition": [
+            {
+                "condition": "state",
+                "entity_id": "input_boolean.switch01",
+                "state": "off"
+            },
+            {
+                "condition": "state",
+                "entity_id": "input_boolean.switch02",
+                "state": "off"
+            },
+            {
+                "condition": "state",
+                "entity_id": "input_boolean.switch03",
+                "state": "off"
+            }
+        ],
+        "action": [
+            {
+                "type": "turn_off",
+                "device_id": "ddef604f97f3b78eb731824263bdfc19",
+                "entity_id": "switch.tz3000_2putqrmw_ts011f_switch",
+                "domain": "switch"
+            }
+        ],
+        "mode": "single"
+    },
+    {
+        "id": "1690983773201",
+        "alias": "ClickCounter10",
+        "description": "",
+        "trigger": [
+            {
+                "platform": "state",
+                "entity_id": [
+                    "input_boolean.switch01"
+                ]
+            },
+            {
+                "platform": "state",
+                "entity_id": [
+                    "input_boolean.switch02"
+                ]
+            },
+            {
+                "platform": "state",
+                "entity_id": [
+                    "input_boolean.switch03"
+                ]
+            }
+        ],
+        "condition": [],
+        "action": [
+            {
+                "service": "counter.increment",
+                "data": {},
+                "target": {
+                    "entity_id": "counter.klickcounter"
+                }
+            }
+        ],
+        "mode": "single"
+    }
+]

@@ -1,0 +1,39 @@
+{
+    "id": "1690982151047",
+    "alias": "AllOffPowerOff",
+    "description": "",
+    "trigger": [
+        {
+            "platform": "state",
+            "entity_id": [
+                "input_button.button01"
+            ]
+        }
+    ],
+    "condition": [
+        {
+            "condition": "state",
+            "entity_id": "input_boolean.switch01",
+            "state": "off"
+        },
+        {
+            "condition": "state",
+            "entity_id": "input_boolean.switch02",
+            "state": "off"
+        },
+        {
+            "condition": "state",
+            "entity_id": "input_boolean.switch03",
+            "state": "off"
+        }
+    ],
+    "action": [
+        {
+            "type": "turn_off",
+            "device_id": "ddef604f97f3b78eb731824263bdfc19",
+            "entity_id": "switch.tz3000_2putqrmw_ts011f_switch",
+            "domain": "switch"
+        }
+    ],
+    "mode": "single"
+}

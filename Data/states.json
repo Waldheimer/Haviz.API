@@ -1,0 +1,704 @@
+[
+    {
+        "entity_id": "person.whm",
+        "state": "unknown",
+        "attributes": {
+            "editable": true,
+            "id": "whm",
+            "user_id": "1e82e8816e8945a2a5d01a356673526b",
+            "friendly_name": "whm"
+        },
+        "last_changed": "2023-08-02T13:04:18.245912+00:00",
+        "last_updated": "2023-08-02T13:04:26.660691+00:00",
+        "context": {
+            "id": "01H6V5K0H4S9MYQ8PYP11RTHX9",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "zone.home",
+        "state": "0",
+        "attributes": {
+            "latitude": 49.5443,
+            "longitude": 6.8847,
+            "radius": 100,
+            "passive": false,
+            "persons": [],
+            "editable": true,
+            "icon": "mdi:home",
+            "friendly_name": "Home"
+        },
+        "last_changed": "2023-08-02T13:04:19.835881+00:00",
+        "last_updated": "2023-08-02T13:04:19.835881+00:00",
+        "context": {
+            "id": "01H6V5JSVVWXNC6J04MYGK78VN",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "sun.sun",
+        "state": "above_horizon",
+        "attributes": {
+            "next_dawn": "2023-08-03T03:27:23.144134+00:00",
+            "next_dusk": "2023-08-02T19:50:36.330928+00:00",
+            "next_midnight": "2023-08-02T23:38:42+00:00",
+            "next_noon": "2023-08-03T11:38:43+00:00",
+            "next_rising": "2023-08-03T04:05:57.948936+00:00",
+            "next_setting": "2023-08-02T19:12:03.294700+00:00",
+            "elevation": 49.42,
+            "azimuth": 229.68,
+            "rising": false,
+            "friendly_name": "Sun"
+        },
+        "last_changed": "2023-08-02T13:04:19.839772+00:00",
+        "last_updated": "2023-08-02T13:44:19.850424+00:00",
+        "context": {
+            "id": "01H6V7W1MA147VMA75FXMJTZZ9",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "input_number.value",
+        "state": "50.0",
+        "attributes": {
+            "initial": null,
+            "editable": true,
+            "min": 0.0,
+            "max": 100.0,
+            "step": 1.0,
+            "mode": "slider",
+            "icon": "mdi:numeric",
+            "friendly_name": "Value"
+        },
+        "last_changed": "2023-08-02T13:36:43.833266+00:00",
+        "last_updated": "2023-08-02T13:36:43.833266+00:00",
+        "context": {
+            "id": "01H6V7E49Q43C0AQ5BE2JWX7FE",
+            "parent_id": null,
+            "user_id": "1e82e8816e8945a2a5d01a356673526b"
+        }
+    },
+    {
+        "entity_id": "input_boolean.switch01",
+        "state": "off",
+        "attributes": {
+            "editable": true,
+            "icon": "mdi:switch",
+            "friendly_name": "switch01"
+        },
+        "last_changed": "2023-08-02T13:44:19.824891+00:00",
+        "last_updated": "2023-08-02T13:44:19.824891+00:00",
+        "context": {
+            "id": "01H6V7W1KFY7H0SWVDJYPAKSG8",
+            "parent_id": null,
+            "user_id": "1e82e8816e8945a2a5d01a356673526b"
+        }
+    },
+    {
+        "entity_id": "input_boolean.switch02",
+        "state": "off",
+        "attributes": {
+            "editable": true,
+            "icon": "mdi:switch",
+            "friendly_name": "switch02"
+        },
+        "last_changed": "2023-08-02T13:44:19.484727+00:00",
+        "last_updated": "2023-08-02T13:44:19.484727+00:00",
+        "context": {
+            "id": "01H6V7W18V36HC6YA2TPYYMMK4",
+            "parent_id": null,
+            "user_id": "1e82e8816e8945a2a5d01a356673526b"
+        }
+    },
+    {
+        "entity_id": "input_boolean.switch03",
+        "state": "off",
+        "attributes": {
+            "editable": true,
+            "icon": "mdi:switch",
+            "friendly_name": "switch03"
+        },
+        "last_changed": "2023-08-02T13:44:19.124844+00:00",
+        "last_updated": "2023-08-02T13:44:19.124844+00:00",
+        "context": {
+            "id": "01H6V7W0XKACZEJKC98QCRE061",
+            "parent_id": null,
+            "user_id": "1e82e8816e8945a2a5d01a356673526b"
+        }
+    },
+    {
+        "entity_id": "input_button.button01",
+        "state": "2023-08-02T13:44:25.432379+00:00",
+        "attributes": {
+            "editable": true,
+            "icon": "mdi:home-circle",
+            "friendly_name": "Button01"
+        },
+        "last_changed": "2023-08-02T13:44:25.432575+00:00",
+        "last_updated": "2023-08-02T13:44:25.432575+00:00",
+        "context": {
+            "id": "01H6V7W72QPY08J65T9BVJZ36A",
+            "parent_id": null,
+            "user_id": "1e82e8816e8945a2a5d01a356673526b"
+        }
+    },
+    {
+        "entity_id": "automation.powerbybutton",
+        "state": "on",
+        "attributes": {
+            "last_triggered": "2023-08-02T13:35:01.010922+00:00",
+            "mode": "single",
+            "current": 0,
+            "id": "1690980211843",
+            "friendly_name": "PowerByButton"
+        },
+        "last_changed": "2023-08-02T13:18:02.559786+00:00",
+        "last_updated": "2023-08-02T13:35:01.073131+00:00",
+        "context": {
+            "id": "01H6V7AZWHQMXP8B768YYB486X",
+            "parent_id": "01H6V7AV06G8R7X5Z0Q25BYB4R",
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "sensor.sun_next_dawn",
+        "state": "2023-08-03T03:27:23+00:00",
+        "attributes": {
+            "device_class": "timestamp",
+            "icon": "mdi:sun-clock",
+            "friendly_name": "Sun Nächste Morgendämmerung"
+        },
+        "last_changed": "2023-08-02T13:04:23.936218+00:00",
+        "last_updated": "2023-08-02T13:04:23.936218+00:00",
+        "context": {
+            "id": "01H6V5JXW0PQ236CDJ6X7C6E60",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "sensor.sun_next_dusk",
+        "state": "2023-08-02T19:50:36+00:00",
+        "attributes": {
+            "device_class": "timestamp",
+            "icon": "mdi:sun-clock",
+            "friendly_name": "Sun Nächste Abenddämmerung"
+        },
+        "last_changed": "2023-08-02T13:04:23.936620+00:00",
+        "last_updated": "2023-08-02T13:04:23.936620+00:00",
+        "context": {
+            "id": "01H6V5JXW0MFVN2K47D9ASA32P",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "sensor.sun_next_midnight",
+        "state": "2023-08-02T23:38:42+00:00",
+        "attributes": {
+            "device_class": "timestamp",
+            "icon": "mdi:sun-clock",
+            "friendly_name": "Sun Nächste Mitternacht"
+        },
+        "last_changed": "2023-08-02T13:04:23.937196+00:00",
+        "last_updated": "2023-08-02T13:04:23.937196+00:00",
+        "context": {
+            "id": "01H6V5JXW1E2KKRRK2Q78AJ4WK",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "sensor.sun_next_noon",
+        "state": "2023-08-03T11:38:43+00:00",
+        "attributes": {
+            "device_class": "timestamp",
+            "icon": "mdi:sun-clock",
+            "friendly_name": "Sun Nächsten Mittag"
+        },
+        "last_changed": "2023-08-02T13:04:23.937561+00:00",
+        "last_updated": "2023-08-02T13:04:23.937561+00:00",
+        "context": {
+            "id": "01H6V5JXW1MJHS79XEGRC06QVM",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "sensor.sun_next_rising",
+        "state": "2023-08-03T04:05:57+00:00",
+        "attributes": {
+            "device_class": "timestamp",
+            "icon": "mdi:sun-clock",
+            "friendly_name": "Sun Nächster Sonnenaufgang"
+        },
+        "last_changed": "2023-08-02T13:04:23.937898+00:00",
+        "last_updated": "2023-08-02T13:04:23.937898+00:00",
+        "context": {
+            "id": "01H6V5JXW1RRNRZWNH189GDHBT",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "sensor.sun_next_setting",
+        "state": "2023-08-02T19:12:03+00:00",
+        "attributes": {
+            "device_class": "timestamp",
+            "icon": "mdi:sun-clock",
+            "friendly_name": "Sun Nächster Sonnenuntergang"
+        },
+        "last_changed": "2023-08-02T13:04:23.938307+00:00",
+        "last_updated": "2023-08-02T13:04:23.938307+00:00",
+        "context": {
+            "id": "01H6V5JXW220DA0PE9VCFJRE14",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "weather.forecast_home",
+        "state": "rainy",
+        "attributes": {
+            "temperature": 20.5,
+            "temperature_unit": "°C",
+            "humidity": 89,
+            "pressure": 997.1,
+            "pressure_unit": "hPa",
+            "wind_bearing": 224.2,
+            "wind_speed": 31.0,
+            "wind_speed_unit": "km/h",
+            "visibility_unit": "km",
+            "precipitation_unit": "mm",
+            "forecast": [
+                {
+                    "condition": "cloudy",
+                    "datetime": "2023-08-03T10:00:00+00:00",
+                    "wind_bearing": 245.2,
+                    "temperature": 20.5,
+                    "templow": 15.6,
+                    "wind_speed": 33.5,
+                    "precipitation": 11.8
+                },
+                {
+                    "condition": "cloudy",
+                    "datetime": "2023-08-04T10:00:00+00:00",
+                    "wind_bearing": 350.4,
+                    "temperature": 21.5,
+                    "templow": 15.3,
+                    "wind_speed": 16.6,
+                    "precipitation": 7.9
+                },
+                {
+                    "condition": "rainy",
+                    "datetime": "2023-08-05T10:00:00+00:00",
+                    "wind_bearing": 234.5,
+                    "temperature": 17.7,
+                    "templow": 13.4,
+                    "wind_speed": 16.2,
+                    "precipitation": 10.5
+                },
+                {
+                    "condition": "rainy",
+                    "datetime": "2023-08-06T10:00:00+00:00",
+                    "wind_bearing": 267.8,
+                    "temperature": 15.2,
+                    "templow": 13.0,
+                    "wind_speed": 26.3,
+                    "precipitation": 14.5
+                },
+                {
+                    "condition": "rainy",
+                    "datetime": "2023-08-07T10:00:00+00:00",
+                    "wind_bearing": 257.6,
+                    "temperature": 18.3,
+                    "templow": 11.8,
+                    "wind_speed": 19.4,
+                    "precipitation": 1.6
+                }
+            ],
+            "attribution": "Weather forecast from met.no, delivered by the Norwegian Meteorological Institute.",
+            "friendly_name": "Forecast Home"
+        },
+        "last_changed": "2023-08-02T13:04:23.976702+00:00",
+        "last_updated": "2023-08-02T13:04:23.976702+00:00",
+        "context": {
+            "id": "01H6V5JXX8W34BP3R20RJ09CVZ",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "automation.conditional_power_on",
+        "state": "unavailable",
+        "attributes": {
+            "restored": true,
+            "friendly_name": "conditional power on",
+            "supported_features": 0
+        },
+        "last_changed": "2023-08-02T13:04:26.659938+00:00",
+        "last_updated": "2023-08-02T13:04:26.659938+00:00",
+        "context": {
+            "id": "01H6V5K0H37NBDMXWA3W6GGY10",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "binary_sensor.ewelink_ms01_iaszone",
+        "state": "unavailable",
+        "attributes": {
+            "device_class": "motion",
+            "friendly_name": "eWeLink MS01 Iaszone"
+        },
+        "last_changed": "2023-08-02T13:06:03.604593+00:00",
+        "last_updated": "2023-08-02T13:06:03.604593+00:00",
+        "context": {
+            "id": "01H6V5NZ6MXQ7G4NQJDF76TTVH",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "button.tz3000_2putqrmw_ts011f_identify",
+        "state": "unknown",
+        "attributes": {
+            "device_class": "update",
+            "friendly_name": "_TZ3000_2putqrmw TS011F Identify"
+        },
+        "last_changed": "2023-08-02T13:06:04.157829+00:00",
+        "last_updated": "2023-08-02T13:06:04.157829+00:00",
+        "context": {
+            "id": "01H6V5NZQX0VY7CANMARNESCMX",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "button.ewelink_ms01_identify",
+        "state": "unavailable",
+        "attributes": {
+            "device_class": "update",
+            "friendly_name": "eWeLink MS01 Identify"
+        },
+        "last_changed": "2023-08-02T13:06:03.606432+00:00",
+        "last_updated": "2023-08-02T13:06:03.606432+00:00",
+        "context": {
+            "id": "01H6V5NZ6P66FWJM3DSC5K7ZG0",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "select.tz3000_2putqrmw_ts011f_power_on_state",
+        "state": "LastState",
+        "attributes": {
+            "options": [
+                "Off",
+                "On",
+                "LastState"
+            ],
+            "friendly_name": "_TZ3000_2putqrmw TS011F Power on state"
+        },
+        "last_changed": "2023-08-02T13:06:03.713284+00:00",
+        "last_updated": "2023-08-02T13:06:03.713284+00:00",
+        "context": {
+            "id": "01H6V5NZA1G561S9JSTFDSH9NJ",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "select.tz3000_2putqrmw_ts011f_backlight_mode",
+        "state": "LightWhenOn",
+        "attributes": {
+            "options": [
+                "Off",
+                "LightWhenOn",
+                "LightWhenOff"
+            ],
+            "friendly_name": "_TZ3000_2putqrmw TS011F Backlight mode"
+        },
+        "last_changed": "2023-08-02T13:06:03.713944+00:00",
+        "last_updated": "2023-08-02T13:06:03.713944+00:00",
+        "context": {
+            "id": "01H6V5NZA11MMEGQ3E2E81J0J8",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "sensor.tz3000_2putqrmw_ts011f_active_power",
+        "state": "0",
+        "attributes": {
+            "state_class": "measurement",
+            "unit_of_measurement": "W",
+            "device_class": "power",
+            "friendly_name": "_TZ3000_2putqrmw TS011F Active power"
+        },
+        "last_changed": "2023-08-02T13:44:33.797270+00:00",
+        "last_updated": "2023-08-02T13:44:33.797270+00:00",
+        "context": {
+            "id": "01H6V7WF85D8SC6Y7DXYJDDG65",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "sensor.tz3000_2putqrmw_ts011f_rms_current",
+        "state": "0.0",
+        "attributes": {
+            "state_class": "measurement",
+            "unit_of_measurement": "A",
+            "device_class": "current",
+            "friendly_name": "_TZ3000_2putqrmw TS011F RMS current"
+        },
+        "last_changed": "2023-08-02T13:44:33.798973+00:00",
+        "last_updated": "2023-08-02T13:44:33.798973+00:00",
+        "context": {
+            "id": "01H6V7WF860QFN2SWGQR1F6AEE",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "sensor.tz3000_2putqrmw_ts011f_rms_voltage",
+        "state": "234",
+        "attributes": {
+            "state_class": "measurement",
+            "unit_of_measurement": "V",
+            "device_class": "voltage",
+            "friendly_name": "_TZ3000_2putqrmw TS011F RMS voltage"
+        },
+        "last_changed": "2023-08-02T13:47:03.798846+00:00",
+        "last_updated": "2023-08-02T13:47:03.798846+00:00",
+        "context": {
+            "id": "01H6V811QPWGGQ77SJMRZM6H35",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "sensor.tz3000_2putqrmw_ts011f_power_factor",
+        "state": "unknown",
+        "attributes": {
+            "state_class": "measurement",
+            "unit_of_measurement": "%",
+            "device_class": "power_factor",
+            "friendly_name": "_TZ3000_2putqrmw TS011F Power factor"
+        },
+        "last_changed": "2023-08-02T13:06:03.775251+00:00",
+        "last_updated": "2023-08-02T13:06:03.775251+00:00",
+        "context": {
+            "id": "01H6V5NZBZEYQEQM3K5718QP4N",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "sensor.tz3000_2putqrmw_ts011f_summation_delivered",
+        "state": "0.81",
+        "attributes": {
+            "state_class": "total_increasing",
+            "device_type": "Electric Metering",
+            "status": "NO_ALARMS",
+            "unit_of_measurement": "kWh",
+            "device_class": "energy",
+            "friendly_name": "_TZ3000_2putqrmw TS011F Summation delivered"
+        },
+        "last_changed": "2023-08-02T13:40:53.401442+00:00",
+        "last_updated": "2023-08-02T13:40:53.401442+00:00",
+        "context": {
+            "id": "01H6V7NR0SWXTQZGSP313K7SVA",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "sensor.ewelink_ms01_battery",
+        "state": "unavailable",
+        "attributes": {
+            "state_class": "measurement",
+            "unit_of_measurement": "%",
+            "device_class": "battery",
+            "friendly_name": "eWeLink MS01 Battery"
+        },
+        "last_changed": "2023-08-02T13:06:03.611719+00:00",
+        "last_updated": "2023-08-02T13:06:03.611719+00:00",
+        "context": {
+            "id": "01H6V5NZ6V8G2VTW61TFX1KE5P",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "switch.tz3000_2putqrmw_ts011f_switch",
+        "state": "off",
+        "attributes": {
+            "friendly_name": "_TZ3000_2putqrmw TS011F Switch"
+        },
+        "last_changed": "2023-08-02T13:44:25.495717+00:00",
+        "last_updated": "2023-08-02T13:44:25.495717+00:00",
+        "context": {
+            "id": "01H6V7W72V8V3TMDZHN29D3X5D",
+            "parent_id": "01H6V7W72QPY08J65T9BVJZ36A",
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "switch.tz3000_2putqrmw_ts011f_child_lock",
+        "state": "off",
+        "attributes": {
+            "icon": "mdi:account-lock",
+            "friendly_name": "_TZ3000_2putqrmw TS011F Child lock"
+        },
+        "last_changed": "2023-08-02T13:06:03.714511+00:00",
+        "last_updated": "2023-08-02T13:06:03.714511+00:00",
+        "context": {
+            "id": "01H6V5NZA23HMW8RY29B2SMEC1",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "sensor.motion_red_battery_2",
+        "state": "100",
+        "attributes": {
+            "state_class": "measurement",
+            "battery_voltage": 3.1,
+            "unit_of_measurement": "%",
+            "device_class": "battery",
+            "friendly_name": "motion_red Battery"
+        },
+        "last_changed": "2023-08-02T13:08:33.597056+00:00",
+        "last_updated": "2023-08-02T13:08:33.597056+00:00",
+        "context": {
+            "id": "01H6V5THNXSWMGV0988WY4RWZJ",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "binary_sensor.motion_red_iaszone_2",
+        "state": "off",
+        "attributes": {
+            "migrated_to_cache": true,
+            "device_class": "motion",
+            "friendly_name": "motion_red Iaszone"
+        },
+        "last_changed": "2023-08-02T13:40:37.340737+00:00",
+        "last_updated": "2023-08-02T13:40:37.340737+00:00",
+        "context": {
+            "id": "01H6V7N8AWX1XAHCD6SJCSF1NB",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "button.motion_red_identify_2",
+        "state": "unknown",
+        "attributes": {
+            "device_class": "update",
+            "friendly_name": "motion_red Identify"
+        },
+        "last_changed": "2023-08-02T13:08:33.598660+00:00",
+        "last_updated": "2023-08-02T13:08:33.598660+00:00",
+        "context": {
+            "id": "01H6V5THNY1FGTVKTA3WZJ6M57",
+            "parent_id": null,
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "automation.motionpoweron",
+        "state": "on",
+        "attributes": {
+            "last_triggered": "2023-08-02T13:39:33.232807+00:00",
+            "mode": "single",
+            "current": 0,
+            "id": "1690981881758",
+            "friendly_name": "MotionPowerOn"
+        },
+        "last_changed": "2023-08-02T13:11:31.465588+00:00",
+        "last_updated": "2023-08-02T13:39:33.295926+00:00",
+        "context": {
+            "id": "01H6V7K9QGT6QCTNNSCW1BYM2B",
+            "parent_id": "01H6V7K9QF5RMST5T125HR0J4J",
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "automation.v50switch01",
+        "state": "on",
+        "attributes": {
+            "last_triggered": "2023-08-02T13:44:19.833918+00:00",
+            "mode": "single",
+            "current": 0,
+            "id": "1690982045934",
+            "friendly_name": "V50Switch01"
+        },
+        "last_changed": "2023-08-02T13:43:47.164405+00:00",
+        "last_updated": "2023-08-02T13:44:19.894440+00:00",
+        "context": {
+            "id": "01H6V7W1KSD6SPEAB73G0FMQ1T",
+            "parent_id": "01H6V7W1KK0B9RFTND148WPE7S",
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "automation.alloffpoweroff",
+        "state": "on",
+        "attributes": {
+            "last_triggered": "2023-08-02T13:44:25.437377+00:00",
+            "mode": "single",
+            "current": 0,
+            "id": "1690982151047",
+            "friendly_name": "AllOffPowerOff"
+        },
+        "last_changed": "2023-08-02T13:16:01.723612+00:00",
+        "last_updated": "2023-08-02T13:44:25.502921+00:00",
+        "context": {
+            "id": "01H6V7W72V8V3TMDZHN29D3X5D",
+            "parent_id": "01H6V7W72QPY08J65T9BVJZ36A",
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "counter.klickcounter",
+        "state": "0",
+        "attributes": {
+            "editable": true,
+            "initial": 0,
+            "step": 1,
+            "friendly_name": "KlickCounter"
+        },
+        "last_changed": "2023-08-02T13:44:19.893256+00:00",
+        "last_updated": "2023-08-02T13:44:19.893256+00:00",
+        "context": {
+            "id": "01H6V7W1KSD6SPEAB73G0FMQ1T",
+            "parent_id": "01H6V7W1KK0B9RFTND148WPE7S",
+            "user_id": null
+        }
+    },
+    {
+        "entity_id": "automation.clickcounter10",
+        "state": "on",
+        "attributes": {
+            "last_triggered": "2023-08-02T13:44:19.828111+00:00",
+            "mode": "single",
+            "current": 0,
+            "id": "1690983773201",
+            "friendly_name": "ClickCounter10"
+        },
+        "last_changed": "2023-08-02T13:43:11.050823+00:00",
+        "last_updated": "2023-08-02T13:44:19.836255+00:00",
+        "context": {
+            "id": "01H6V7W1KK0B9RFTND148WPE7S",
+            "parent_id": "01H6V7W1KFY7H0SWVDJYPAKSG8",
+            "user_id": null
+        }
+    }
+]
