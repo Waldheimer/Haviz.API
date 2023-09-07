@@ -16,7 +16,7 @@ namespace HAViz.API.Services
         }
         public List<string>? GetEntityFilter()
         {
-            return _configuration.GetSection("Entity_Excludes").Get<List<string>>();
+            return _configuration.GetSection("Entity_Includes").Get<List<string>>();
         }
         public async Task<List<string>?> GetEntityIncludes()
         {
@@ -76,10 +76,18 @@ namespace HAViz.API.Services
         public async Task<IEnumerable<AutomationStateEntry>> GetEntityStatesAsync()
         {
             string states = File.ReadAllText($"{ api_source}states.json");
-            return (from filters in GetEntityFilter()
+
+            var result = (from filters in GetEntityFilter()
                     from data in JsonConvert.DeserializeObject<IEnumerable<AutomationStateEntry>>(states)
                     where data.entity_id.StartsWith(filters)
                     select data).DistinctBy(e => e.attributes.friendly_name);
+            for (int i=0; i< result.Count(); i++)
+            {
+                if (result.ElementAt(i).state.Contains(":00")){
+                    result.ElementAt(i).state = "Pressed";
+                }
+            }
+            return result;
         }
         public async Task<IEnumerable<AutomationStateEntry>> GetAutomationStatesAsync()
         {

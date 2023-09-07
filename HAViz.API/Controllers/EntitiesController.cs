@@ -33,7 +33,17 @@ namespace HAViz.API.Controllers
         [HttpGet("states")]
         public async Task<IEnumerable<AutomationStateEntry>?> GetStates()
         {
-            return await _service.GetEntityStatesAsync();
+            DateTime? date = null;
+            IEnumerable<AutomationStateEntry?> states = await _service.GetEntityStatesAsync();
+            foreach (AutomationStateEntry item in states)
+            {
+                if (DateTime.TryParse(item.state, out DateTime result))
+                {
+                    date = result;
+                    item.state = "Pressed";
+                }
+            }
+            return states;
         }
         [HttpGet("{id}")]
         public async Task<Entity?> GetById([FromRoute] string id)

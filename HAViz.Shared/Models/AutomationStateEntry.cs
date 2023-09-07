@@ -8,6 +8,11 @@
         public string entity_id { get { return _entity_id; } set { _entity_id = value; } }
         public string state { get { return _state; } set { _state = value; } }
         public Attributes? attributes { get { return _attributes; } set { _attributes = value; } } 
+        public string SetState(string state)
+        {
+            this._state = state;
+            return this._state;
+        }
     }
     public class Attributes
     {
