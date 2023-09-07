@@ -265,11 +265,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\whm20\\source\\BA_GIT\\API\\HAViz.API\\HAViz.API.csproj",
+      "projectUniqueName": "D:\\__Bachelor__\\BA_GIT\\API\\HAViz.API\\HAViz.API.csproj",
       "projectName": "HAViz.API",
-      "projectPath": "C:\\Users\\whm20\\source\\BA_GIT\\API\\HAViz.API\\HAViz.API.csproj",
+      "projectPath": "D:\\__Bachelor__\\BA_GIT\\API\\HAViz.API\\HAViz.API.csproj",
       "packagesPath": "C:\\Users\\whm20\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\whm20\\source\\BA_GIT\\API\\HAViz.API\\obj\\",
+      "outputPath": "D:\\__Bachelor__\\BA_GIT\\API\\HAViz.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -284,14 +284,16 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\whm20\\source\\BA_GIT\\API\\HAViz.Shared\\HAViz.Shared.csproj": {
-              "projectPath": "C:\\Users\\whm20\\source\\BA_GIT\\API\\HAViz.Shared\\HAViz.Shared.csproj"
+            "D:\\__Bachelor__\\BA_GIT\\API\\HAViz.Shared\\HAViz.Shared.csproj": {
+              "projectPath": "D:\\__Bachelor__\\BA_GIT\\API\\HAViz.Shared\\HAViz.Shared.csproj"
             }
           }
         }
@@ -334,7 +336,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

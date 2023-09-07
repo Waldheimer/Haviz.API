@@ -1,4 +1,5 @@
-﻿using HAViz.API.Models;
+﻿
+using HAViz.API.Models;
 using HAViz.Shared.Models;
 using Newtonsoft.Json;
 
@@ -31,6 +32,10 @@ namespace HAViz.API.Services
             List<string> includes = await GetEntityIncludes();
             includes.Add("automation");
             var entries = await GetLogAsync();
+            foreach (var item in entries)
+            {
+                if (DateTime.TryParse(item.state, out DateTime result)) { item.state = "Pressed"; }
+            }
             return (from include in includes
                     from data in entries
                     where data.entity_id == include

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R4okzi7wF1QK8NV448QHC2aDFMxD2d0SVvKaDxJ5vqg/9N75W0iDhto7ah8VbXF3VoHjaRPU+Mg8f1Fskh+lug==",
+  "dgSpecHash": "rKxO39PPNJ/xswTLLHNPfXJvabIJoujJmvDRcmyh5S9xSqLne+HwxfZw5A3sgZ/r8UpuWjFJBxrLK2R57fE/kw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\whm20\\source\\BA_GIT\\API\\HAViz.API\\HAViz.API.csproj",
+  "projectFilePath": "D:\\__Bachelor__\\BA_GIT\\API\\HAViz.API\\HAViz.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\whm20\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\7.0.9\\microsoft.aspnetcore.jsonpatch.7.0.9.nupkg.sha512",
     "C:\\Users\\whm20\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\7.0.9\\microsoft.aspnetcore.mvc.newtonsoftjson.7.0.9.nupkg.sha512",
