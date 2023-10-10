@@ -80,14 +80,14 @@ namespace HAViz.API.Services
             var result = (from filters in GetEntityFilter()
                     from data in JsonConvert.DeserializeObject<IEnumerable<AutomationStateEntry>>(states)
                     where data.entity_id.StartsWith(filters)
-                    select data).DistinctBy(e => e.attributes.friendly_name);
+                    select data).DistinctBy(e => e.attributes.friendly_name).ToList();
             for (int i=0; i< result.Count(); i++)
             {
                 if (result.ElementAt(i).state.Contains(":00")){
-                    result.ElementAt(i).state = "Pressed";
+                    string value = result.ElementAt(i).SetState("Pressed");
                 }
             }
-            return result;
+            return result.AsEnumerable();
         }
         public async Task<IEnumerable<AutomationStateEntry>> GetAutomationStatesAsync()
         {

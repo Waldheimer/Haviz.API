@@ -1,0 +1,13 @@
+D:\__Bachelor__\BA_GIT\API\HAViz.API\bin\Release\net7.0\publish\HAViz.API.exe
+D:\__Bachelor__\BA_GIT\API\HAViz.API\bin\Release\net7.0\publish\appsettings.Development.json
+D:\__Bachelor__\BA_GIT\API\HAViz.API\bin\Release\net7.0\publish\appsettings.json
+D:\__Bachelor__\BA_GIT\API\HAViz.API\bin\Release\net7.0\publish\HAViz.API.dll
+D:\__Bachelor__\BA_GIT\API\HAViz.API\bin\Release\net7.0\publish\HAViz.API.deps.json
+D:\__Bachelor__\BA_GIT\API\HAViz.API\bin\Release\net7.0\publish\HAViz.API.runtimeconfig.json
+D:\__Bachelor__\BA_GIT\API\HAViz.API\bin\Release\net7.0\publish\HAViz.API.pdb
+D:\__Bachelor__\BA_GIT\API\HAViz.API\bin\Release\net7.0\publish\Microsoft.AspNetCore.JsonPatch.dll
+D:\__Bachelor__\BA_GIT\API\HAViz.API\bin\Release\net7.0\publish\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\__Bachelor__\BA_GIT\API\HAViz.API\bin\Release\net7.0\publish\Newtonsoft.Json.dll
+D:\__Bachelor__\BA_GIT\API\HAViz.API\bin\Release\net7.0\publish\Newtonsoft.Json.Bson.dll
+D:\__Bachelor__\BA_GIT\API\HAViz.API\bin\Release\net7.0\publish\HAViz.Shared.dll
+D:\__Bachelor__\BA_GIT\API\HAViz.API\bin\Release\net7.0\publish\HAViz.Shared.pdb

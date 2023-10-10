@@ -1,0 +1,3 @@
+D:\__Bachelor__\BA_GIT\API\HAViz.Shared\bin\Release\net6.0\publish\HAViz.Shared.dll
+D:\__Bachelor__\BA_GIT\API\HAViz.Shared\bin\Release\net6.0\publish\HAViz.Shared.deps.json
+D:\__Bachelor__\BA_GIT\API\HAViz.Shared\bin\Release\net6.0\publish\HAViz.Shared.pdb

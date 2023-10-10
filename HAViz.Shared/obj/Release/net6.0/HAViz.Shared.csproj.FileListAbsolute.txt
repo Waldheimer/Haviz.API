@@ -1,0 +1,12 @@
+D:\__Bachelor__\BA_GIT\API\HAViz.Shared\bin\Release\net6.0\HAViz.Shared.deps.json
+D:\__Bachelor__\BA_GIT\API\HAViz.Shared\bin\Release\net6.0\HAViz.Shared.dll
+D:\__Bachelor__\BA_GIT\API\HAViz.Shared\bin\Release\net6.0\HAViz.Shared.pdb
+D:\__Bachelor__\BA_GIT\API\HAViz.Shared\obj\Release\net6.0\HAViz.Shared.csproj.AssemblyReference.cache
+D:\__Bachelor__\BA_GIT\API\HAViz.Shared\obj\Release\net6.0\HAViz.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\__Bachelor__\BA_GIT\API\HAViz.Shared\obj\Release\net6.0\HAViz.Shared.AssemblyInfoInputs.cache
+D:\__Bachelor__\BA_GIT\API\HAViz.Shared\obj\Release\net6.0\HAViz.Shared.AssemblyInfo.cs
+D:\__Bachelor__\BA_GIT\API\HAViz.Shared\obj\Release\net6.0\HAViz.Shared.csproj.CoreCompileInputs.cache
+D:\__Bachelor__\BA_GIT\API\HAViz.Shared\obj\Release\net6.0\HAViz.Shared.dll
+D:\__Bachelor__\BA_GIT\API\HAViz.Shared\obj\Release\net6.0\refint\HAViz.Shared.dll
+D:\__Bachelor__\BA_GIT\API\HAViz.Shared\obj\Release\net6.0\HAViz.Shared.pdb
+D:\__Bachelor__\BA_GIT\API\HAViz.Shared\obj\Release\net6.0\ref\HAViz.Shared.dll

@@ -1,0 +1,66 @@
+{
+    "id": "1234567890",
+    "alias": "SoSomething",
+    "description": "Just Does Sonething",
+    "trigger": [
+        {
+            "platform": "state",
+            "entity_id": [
+                "input_boolean.switch01"
+            ]
+        },
+        {
+            "platform": "state",
+            "entity_id": [
+                "input_boolean.switch02"
+            ]
+        }
+    ],
+    "condition": [
+        {
+            "condition": "and",
+            "conditions":[
+                {
+                    "condition": "or",
+                    "conditions": [
+                        {
+                            "condition": "state",
+                            "entity_id": "input_boolean.switch01",
+                            "state": "on"
+                        },
+                        {
+                            "condition": "state",
+                            "entity_id": "input_boolean.switch03",
+                            "state": "on"
+                        }
+                    ]
+                },
+                {
+                    "condition": "or",
+                    "conditions": [
+                        {
+                            "condition": "state",
+                            "entity_id": "input_boolean.switch02",
+                            "state": "on"
+                        },
+                        {
+                            "condition": "state",
+                            "entity_id": "input_boolean.switch04",
+                            "state": "on"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "action": [
+        {
+            "service": "light.toggle",
+            "data": {},
+            "target": {
+                "entity_id": "light.light1"
+            }
+        }
+    ],
+    "mode": "single"
+}
