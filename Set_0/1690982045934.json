@@ -1,0 +1,31 @@
+{
+    "id": "1690982045934",
+    "alias": "V50Switch01",
+    "description": "",
+    "trigger": [
+        {
+            "platform": "state",
+            "entity_id": [
+                "counter.klickcounter"
+            ],
+            "to": "10"
+        }
+    ],
+    "condition": [],
+    "action": [
+        {
+            "type": "turn_on",
+            "device_id": "ddef604f97f3b78eb731824263bdfc19",
+            "entity_id": "switch.tz3000_2putqrmw_ts011f_switch",
+            "domain": "switch"
+        },
+        {
+            "service": "counter.reset",
+            "data": {},
+            "target": {
+                "entity_id": "counter.klickcounter"
+            }
+        }
+    ],
+    "mode": "single"
+}

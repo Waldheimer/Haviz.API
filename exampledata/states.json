@@ -78,7 +78,7 @@
         }
     },
     {
-        "entity_id": "automation.motionredlighton",
+        "entity_id": "automation.motion_red_light_on",
         "state": "on",
         "attributes": {
             "last_triggered": "2023-11-06T23:37:57.363489+00:00",
@@ -96,7 +96,7 @@
         }
     },
     {
-        "entity_id": "automation.motionredlightoff",
+        "entity_id": "automation.motion_red_light_off",
         "state": "on",
         "attributes": {
             "last_triggered": "2023-11-06T23:36:46.169507+00:00",
@@ -150,7 +150,7 @@
         }
     },
     {
-        "entity_id": "automation.motiongreenlighton",
+        "entity_id": "automation.motion_green_light_on",
         "state": "on",
         "attributes": {
             "last_triggered": "2023-11-06T23:36:40.784644+00:00",
@@ -168,7 +168,7 @@
         }
     },
     {
-        "entity_id": "automation.motiongreenlightoff",
+        "entity_id": "automation.motion_green_light_off",
         "state": "on",
         "attributes": {
             "last_triggered": "2023-11-06T23:38:00.084253+00:00",

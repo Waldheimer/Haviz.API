@@ -7,6 +7,7 @@ namespace HAViz.API.Services
 {
     public class Mock_DataService : IHA_DataService
     {
+        #region Field, Properties & Constructors
         IConfiguration _configuration;
         string api_source;
         public Mock_DataService(IConfiguration configuration)
@@ -14,14 +15,19 @@ namespace HAViz.API.Services
             _configuration = configuration;
             api_source = _configuration.GetSection("API_Mock_URL").Get<string>();
         }
+        #endregion
+
+        #region Filter
+        
         public List<string>? GetEntityFilter()
         {
             return _configuration.GetSection("Entity_Includes").Get<List<string>>();
         }
-        public async Task<List<string>?> GetEntityIncludes()
-        {
-            return _configuration.GetSection("Entity_Includes").Get<List<string>>();
-        }
+
+        #endregion
+
+        #region Logbook
+
         public async Task<IEnumerable<LogEntry>?> GetLogAsync()
         {
             string log = File.ReadAllText($"{api_source}logbook.json");
@@ -29,7 +35,7 @@ namespace HAViz.API.Services
         }
         public async Task<IEnumerable<LogEntry>> GetFilteredLogAsync()
         {
-            List<string> includes = await GetEntityIncludes();
+            List<string> includes = GetEntityFilter();
             includes.Add("automation");
             var entries = await GetLogAsync();
             foreach (var item in entries)
@@ -41,6 +47,11 @@ namespace HAViz.API.Services
                     where data.entity_id == include
                     select data).OrderBy(e => e.when);
         }
+
+        #endregion
+
+        #region Automations
+
         public async Task<IEnumerable<string>> GetAllAutomationsAsync()
         {
             var logEntries = await GetLogAsync();
@@ -48,10 +59,41 @@ namespace HAViz.API.Services
                     where data.entity_id.StartsWith("automation")
                     select data.entity_id).Distinct();
         }
+        public async Task<IEnumerable<AutomationStateEntry>> GetAutomationStatesAsync()
+        {
+            string states = File.ReadAllText($"{api_source}states.json");
+            return from data in JsonConvert.DeserializeObject<AutomationStateEntry[]>(states)
+                   where data.entity_id.StartsWith("automation") && !data.state.Equals("unavailable")
+                   select data;
+        }
+        public async Task<string> GetAutomationIdByName(string name)
+        {
+            var allstates = await GetAutomationStatesAsync();
+            await Console.Out.WriteLineAsync(allstates.Count().ToString());
+            return (from data in allstates where data.attributes.friendly_name.ToLower().Replace("_", "").Contains(name.ToLower()) select data.attributes.id).First();
+        }
+        public async Task<YamlDefinition> GetAutomationYamlAsync(string id)
+        {
+            string content = File.ReadAllText($"{api_source}{id}.json");
+            var pre = JsonConvert.DeserializeObject<YamlDefinition>(content);
+            foreach (var item in pre.trigger)
+            {
+                string eid = item.entity_id.ToString();
+                List<string> ids = new List<string>();
+                try { ids = JsonConvert.DeserializeObject<List<string>>(eid); }
+                catch { ids.Add(eid); }
+                item.entity_id = ids;
+            }
+            return pre;
+        }
+
+        #endregion
+
+        #region Entities
 
         public async Task<IEnumerable<Entity>> GetAllEntitiesAsync()
         {
-            var excludes = await GetEntityIncludes();
+            var excludes = GetEntityFilter();
             string states = File.ReadAllText($"{api_source}states.json");
             return from exes in excludes
                    from data in JsonConvert.DeserializeObject<IEnumerable<Entity>>(states)
@@ -89,37 +131,13 @@ namespace HAViz.API.Services
             }
             return result.AsEnumerable();
         }
-        public async Task<IEnumerable<AutomationStateEntry>> GetAutomationStatesAsync()
-        {
-            string states = File.ReadAllText($"{api_source}states.json");
-            return from data in JsonConvert.DeserializeObject<AutomationStateEntry[]>(states)
-                   where data.entity_id.StartsWith("automation") && !data.state.Equals("unavailable")
-                   select data;
-        }
-        public async Task<string> GetAutomationIdByName(string name)
-        {
-            var allstates = await GetAutomationStatesAsync();
-            await Console.Out.WriteLineAsync(allstates.Count().ToString());
-            return (from data in allstates where data.attributes.friendly_name.ToLower().Contains(name.ToLower()) select data.attributes.id).First();
-        }
-        public async Task<YamlDefinition> GetAutomationYamlAsync(string id)
-        {
-            string content = File.ReadAllText($"{api_source}{id}.json");
-            var pre = JsonConvert.DeserializeObject<YamlDefinition>(content);
-            foreach ( var item in pre.trigger)
-            {
-                string eid = item.entity_id.ToString();
-                List<string> ids = new List<string>();
-                try { ids = JsonConvert.DeserializeObject<List<string>>(eid); }
-                catch { ids.Add(eid); }
-                item.entity_id = ids;
-            }
-            return pre;
-        }
+       
 
         public Task<IEnumerable<Entity>?> GetFilteredEntitiesAsync(List<string> filters)
         {
             throw new NotImplementedException();
         }
+
+        #endregion
     }
 }

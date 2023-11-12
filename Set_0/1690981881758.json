@@ -1,0 +1,49 @@
+{
+    "id": "1690981881758",
+    "alias": "MotionPowerOn",
+    "description": "",
+    "trigger": [
+        {
+            "type": "motion",
+            "platform": "device",
+            "device_id": "10f803010844988b0cb1b7439052b79e",
+            "entity_id": "binary_sensor.motion_red_iaszone_2",
+            "domain": "binary_sensor"
+        }
+    ],
+    "condition": [ 
+        {
+        "condition": "or",
+        "conditions": [
+            {
+                "condition": "or",
+                "conditions": [
+                    {
+                        "condition": "state",
+                        "entity_id": "input_boolean.switch02",
+                        "state": "on"
+                    },
+                    {
+                        "condition": "state",
+                        "entity_id": "input_boolean.switch03",
+                        "state": "on"
+                    }
+                ]
+            },
+            {
+                "condition": "state",
+                "entity_id": "input_boolean.switch01",
+                "state": "off"
+            }
+        ]
+    }],
+    "action": [
+        {
+            "type": "turn_on",
+            "device_id": "ddef604f97f3b78eb731824263bdfc19",
+            "entity_id": "switch.tz3000_2putqrmw_ts011f_switch",
+            "domain": "switch"
+        }
+    ],
+    "mode": "single"
+}

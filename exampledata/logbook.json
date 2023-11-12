@@ -1,455 +1,9 @@
 [
     {
-        "when": "2023-11-06T23:11:29.080901+00:00",
-        "state": "on",
-        "entity_id": "automation.motionredlightoff",
-        "name": "motionredlightoff",
-        "context_user_id": "1e82e8816e8945a2a5d01a356673526b",
-        "context_domain": "automation",
-        "context_service": "turn_on",
-        "context_event_type": "call_service"
-    },
-    {
-        "when": "2023-11-06T23:11:50.522846+00:00",
-        "state": "on",
-        "entity_id": "automation.motionredlighton",
-        "name": "motionredlighton",
-        "context_user_id": "1e82e8816e8945a2a5d01a356673526b",
-        "context_domain": "automation",
-        "context_service": "turn_on",
-        "context_event_type": "call_service"
-    },
-    {
-        "when": "2023-11-06T23:12:14.988925+00:00",
-        "state": "on",
-        "entity_id": "binary_sensor.motion_red_iaszone_2",
-        "name": "motion_red Iaszone"
-    },
-    {
-        "name": "motionredlighton",
-        "message": "triggered by state of binary_sensor.motion_red_iaszone_2",
-        "source": "state of binary_sensor.motion_red_iaszone_2",
-        "entity_id": "automation.motionredlighton",
-        "context_id": "01HEKEGY4GG7TM6QXGKG7KX6WG",
-        "when": "2023-11-06T23:12:14.993276+00:00",
-        "domain": "automation",
-        "context_state": "on",
-        "context_entity_id": "binary_sensor.motion_red_iaszone_2",
-        "context_entity_id_name": "motion_red Iaszone"
-    },
-    {
-        "when": "2023-11-06T23:12:15.000530+00:00",
-        "state": "on",
-        "entity_id": "input_boolean.lightswitch1",
-        "name": "LightSwitch1",
-        "icon": "mdi:light-switch",
-        "context_event_type": "automation_triggered",
-        "context_domain": "automation",
-        "context_name": "motionredlighton",
-        "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
-        "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlighton",
-        "context_entity_id_name": "motionredlighton"
-    },
-    {
-        "when": "2023-11-06T23:13:22.562273+00:00",
-        "state": "off",
-        "entity_id": "binary_sensor.motion_red_iaszone_2",
-        "name": "motion_red Iaszone"
-    },
-    {
-        "when": "2023-11-06T23:13:37.898448+00:00",
-        "state": "on",
-        "entity_id": "automation.lighton",
-        "name": "LightOn",
-        "context_user_id": "1e82e8816e8945a2a5d01a356673526b",
-        "context_domain": "automation",
-        "context_service": "turn_on",
-        "context_event_type": "call_service"
-    },
-    {
-        "when": "2023-11-06T23:14:20.477066+00:00",
-        "state": "unavailable",
-        "entity_id": "automation.lighton",
-        "name": "LightOn"
-    },
-    {
-        "when": "2023-11-06T23:14:20.479401+00:00",
-        "state": "on",
-        "entity_id": "automation.lighton",
-        "name": "LightOn"
-    },
-    {
-        "when": "2023-11-06T23:15:04.747220+00:00",
-        "state": "on",
-        "entity_id": "automation.lightoff",
-        "name": "LightOff",
-        "context_user_id": "1e82e8816e8945a2a5d01a356673526b",
-        "context_domain": "automation",
-        "context_service": "turn_on",
-        "context_event_type": "call_service"
-    },
-    {
-        "when": "2023-11-06T23:15:31.324913+00:00",
-        "state": "off",
-        "entity_id": "input_boolean.lightswitch1",
-        "name": "LightSwitch1",
-        "icon": "mdi:light-switch",
-        "context_user_id": "1e82e8816e8945a2a5d01a356673526b",
-        "context_domain": "input_boolean",
-        "context_service": "turn_off",
-        "context_event_type": "call_service"
-    },
-    {
-        "name": "LightOff",
-        "message": "triggered by state of input_boolean.lightswitch1",
-        "source": "state of input_boolean.lightswitch1",
-        "entity_id": "automation.lightoff",
-        "context_id": "01HEKEPXVZWM3ZB1PZQQ54D2VP",
-        "when": "2023-11-06T23:15:31.327529+00:00",
-        "domain": "automation",
-        "context_domain": "input_boolean",
-        "context_service": "turn_off",
-        "context_event_type": "call_service"
-    },
-    {
-        "when": "2023-11-06T23:15:39.480086+00:00",
-        "state": "on",
-        "entity_id": "binary_sensor.motion_red_iaszone_2",
-        "name": "motion_red Iaszone"
-    },
-    {
-        "name": "motionredlighton",
-        "message": "triggered by state of binary_sensor.motion_red_iaszone_2",
-        "source": "state of binary_sensor.motion_red_iaszone_2",
-        "entity_id": "automation.motionredlighton",
-        "context_id": "01HEKEQ5TVJ2TGZG2495DWP2ZE",
-        "when": "2023-11-06T23:15:39.484241+00:00",
-        "domain": "automation",
-        "context_state": "on",
-        "context_entity_id": "binary_sensor.motion_red_iaszone_2",
-        "context_entity_id_name": "motion_red Iaszone"
-    },
-    {
-        "when": "2023-11-06T23:15:39.487298+00:00",
-        "state": "on",
-        "entity_id": "input_boolean.lightswitch1",
-        "name": "LightSwitch1",
-        "icon": "mdi:light-switch",
-        "context_event_type": "automation_triggered",
-        "context_domain": "automation",
-        "context_name": "motionredlighton",
-        "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
-        "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlighton",
-        "context_entity_id_name": "motionredlighton"
-    },
-    {
-        "name": "LightOn",
-        "message": "triggered by state of input_boolean.lightswitch1",
-        "source": "state of input_boolean.lightswitch1",
-        "entity_id": "automation.lighton",
-        "context_id": "01HEKEQ5V01ZRSEE93RFTDG29Q",
-        "when": "2023-11-06T23:15:39.489030+00:00",
-        "domain": "automation",
-        "context_event_type": "automation_triggered",
-        "context_domain": "automation",
-        "context_name": "motionredlighton",
-        "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
-        "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlighton",
-        "context_entity_id_name": "motionredlighton"
-    },
-    {
-        "when": "2023-11-06T23:15:39.573620+00:00",
-        "state": "on",
-        "entity_id": "switch.power_switch",
-        "name": "power Switch",
-        "context_event_type": "automation_triggered",
-        "context_domain": "automation",
-        "context_name": "LightOn",
-        "context_message": "triggered by state of input_boolean.lightswitch1",
-        "context_source": "state of input_boolean.lightswitch1",
-        "context_entity_id": "automation.lighton",
-        "context_entity_id_name": "LightOn"
-    },
-    {
-        "when": "2023-11-06T23:15:45.055121+00:00",
-        "state": "on",
-        "entity_id": "binary_sensor.motion_green_iaszone",
-        "name": "motion_green Iaszone"
-    },
-    {
-        "when": "2023-11-06T23:16:17.554690+00:00",
-        "state": "off",
-        "entity_id": "input_boolean.lightswitch1",
-        "name": "LightSwitch1",
-        "icon": "mdi:light-switch",
-        "context_user_id": "1e82e8816e8945a2a5d01a356673526b",
-        "context_domain": "input_boolean",
-        "context_service": "turn_off",
-        "context_event_type": "call_service"
-    },
-    {
-        "name": "LightOff",
-        "message": "triggered by state of input_boolean.lightswitch1",
-        "source": "state of input_boolean.lightswitch1",
-        "entity_id": "automation.lightoff",
-        "context_id": "01HEKERB0MAW82XEWBY3FW2PYS",
-        "when": "2023-11-06T23:16:17.556778+00:00",
-        "domain": "automation",
-        "context_domain": "input_boolean",
-        "context_service": "turn_off",
-        "context_event_type": "call_service"
-    },
-    {
-        "when": "2023-11-06T23:16:17.633252+00:00",
-        "state": "off",
-        "entity_id": "switch.power_switch",
-        "name": "power Switch",
-        "context_event_type": "automation_triggered",
-        "context_domain": "automation",
-        "context_name": "LightOff",
-        "context_message": "triggered by state of input_boolean.lightswitch1",
-        "context_source": "state of input_boolean.lightswitch1",
-        "context_entity_id": "automation.lightoff",
-        "context_entity_id_name": "LightOff"
-    },
-    {
-        "when": "2023-11-06T23:16:18.543298+00:00",
-        "state": "on",
-        "entity_id": "input_boolean.lightswitch2",
-        "name": "LightSwitch2",
-        "icon": "mdi:light-switch",
-        "context_user_id": "1e82e8816e8945a2a5d01a356673526b",
-        "context_domain": "input_boolean",
-        "context_service": "turn_on",
-        "context_event_type": "call_service"
-    },
-    {
-        "name": "LightOn",
-        "message": "triggered by state of input_boolean.lightswitch2",
-        "source": "state of input_boolean.lightswitch2",
-        "entity_id": "automation.lighton",
-        "context_id": "01HEKERBZG86QMRFKZBCV7VAG5",
-        "when": "2023-11-06T23:16:18.544956+00:00",
-        "domain": "automation",
-        "context_domain": "input_boolean",
-        "context_service": "turn_on",
-        "context_event_type": "call_service"
-    },
-    {
-        "when": "2023-11-06T23:16:18.616383+00:00",
-        "state": "on",
-        "entity_id": "switch.power_switch",
-        "name": "power Switch",
-        "context_event_type": "automation_triggered",
-        "context_domain": "automation",
-        "context_name": "LightOn",
-        "context_message": "triggered by state of input_boolean.lightswitch2",
-        "context_source": "state of input_boolean.lightswitch2",
-        "context_entity_id": "automation.lighton",
-        "context_entity_id_name": "LightOn"
-    },
-    {
-        "when": "2023-11-06T23:16:22.583648+00:00",
-        "state": "2023-11-07T23:16:09+00:00",
-        "entity_id": "sensor.sun_next_midnight",
-        "name": "Sun Nächste Mitternacht",
-        "icon": "mdi:sun-clock"
-    },
-    {
-        "when": "2023-11-06T23:16:50.372367+00:00",
-        "state": "off",
-        "entity_id": "binary_sensor.motion_green_iaszone",
-        "name": "motion_green Iaszone"
-    },
-    {
-        "when": "2023-11-06T23:16:54.244458+00:00",
-        "state": "off",
-        "entity_id": "binary_sensor.motion_red_iaszone_2",
-        "name": "motion_red Iaszone"
-    },
-    {
-        "when": "2023-11-06T23:17:12.773030+00:00",
-        "state": "on",
-        "entity_id": "binary_sensor.motion_red_iaszone_2",
-        "name": "motion_red Iaszone"
-    },
-    {
-        "name": "motionredlightoff",
-        "message": "triggered by state of binary_sensor.motion_red_iaszone_2",
-        "source": "state of binary_sensor.motion_red_iaszone_2",
-        "entity_id": "automation.motionredlightoff",
-        "context_id": "01HEKET0YC158YAXXKZPBQ2M20",
-        "when": "2023-11-06T23:17:12.780932+00:00",
-        "domain": "automation",
-        "context_state": "on",
-        "context_entity_id": "binary_sensor.motion_red_iaszone_2",
-        "context_entity_id_name": "motion_red Iaszone"
-    },
-    {
-        "when": "2023-11-06T23:17:16.944312+00:00",
-        "state": "on",
-        "entity_id": "binary_sensor.motion_green_iaszone",
-        "name": "motion_green Iaszone"
-    },
-    {
-        "when": "2023-11-06T23:18:23.468013+00:00",
-        "state": "off",
-        "entity_id": "binary_sensor.motion_green_iaszone",
-        "name": "motion_green Iaszone"
-    },
-    {
-        "when": "2023-11-06T23:18:27.268670+00:00",
-        "state": "off",
-        "entity_id": "binary_sensor.motion_red_iaszone_2",
-        "name": "motion_red Iaszone"
-    },
-    {
-        "when": "2023-11-06T23:18:34.503776+00:00",
-        "state": "on",
-        "entity_id": "binary_sensor.motion_red_iaszone_2",
-        "name": "motion_red Iaszone"
-    },
-    {
-        "name": "motionredlightoff",
-        "message": "triggered by state of binary_sensor.motion_red_iaszone_2",
-        "source": "state of binary_sensor.motion_red_iaszone_2",
-        "entity_id": "automation.motionredlightoff",
-        "context_id": "01HEKEWGRA7SCPCV6C37GMZGDE",
-        "when": "2023-11-06T23:18:34.506977+00:00",
-        "domain": "automation",
-        "context_state": "on",
-        "context_entity_id": "binary_sensor.motion_red_iaszone_2",
-        "context_entity_id_name": "motion_red Iaszone"
-    },
-    {
-        "when": "2023-11-06T23:19:24.522565+00:00",
-        "state": "unavailable",
-        "entity_id": "automation.motionredlightoff",
-        "name": "motionredlightoff"
-    },
-    {
-        "when": "2023-11-06T23:19:24.526416+00:00",
-        "state": "on",
-        "entity_id": "automation.motionredlightoff",
-        "name": "motionredlightoff"
-    },
-    {
-        "when": "2023-11-06T23:19:41.619150+00:00",
-        "state": "off",
-        "entity_id": "binary_sensor.motion_red_iaszone_2",
-        "name": "motion_red Iaszone"
-    },
-    {
-        "when": "2023-11-06T23:19:47.359047+00:00",
-        "state": "on",
-        "entity_id": "binary_sensor.motion_red_iaszone_2",
-        "name": "motion_red Iaszone"
-    },
-    {
-        "name": "motionredlightoff",
-        "message": "triggered by state of binary_sensor.motion_red_iaszone_2",
-        "source": "state of binary_sensor.motion_red_iaszone_2",
-        "entity_id": "automation.motionredlightoff",
-        "context_id": "01HEKEYQX5GK3AFG1QS173KES0",
-        "when": "2023-11-06T23:19:47.366302+00:00",
-        "domain": "automation",
-        "context_state": "on",
-        "context_entity_id": "binary_sensor.motion_red_iaszone_2",
-        "context_entity_id_name": "motion_red Iaszone"
-    },
-    {
-        "when": "2023-11-06T23:19:47.382952+00:00",
-        "state": "off",
-        "entity_id": "input_boolean.lightswitch2",
-        "name": "LightSwitch2",
-        "icon": "mdi:light-switch",
-        "context_event_type": "automation_triggered",
-        "context_domain": "automation",
-        "context_name": "motionredlightoff",
-        "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
-        "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlightoff",
-        "context_entity_id_name": "motionredlightoff"
-    },
-    {
-        "name": "LightOff",
-        "message": "triggered by state of input_boolean.lightswitch2",
-        "source": "state of input_boolean.lightswitch2",
-        "entity_id": "automation.lightoff",
-        "context_id": "01HEKEYQXRA7MNPWAYFA9J3TXD",
-        "when": "2023-11-06T23:19:47.385045+00:00",
-        "domain": "automation",
-        "context_event_type": "automation_triggered",
-        "context_domain": "automation",
-        "context_name": "motionredlightoff",
-        "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
-        "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlightoff",
-        "context_entity_id_name": "motionredlightoff"
-    },
-    {
-        "when": "2023-11-06T23:19:47.462116+00:00",
-        "state": "off",
-        "entity_id": "switch.power_switch",
-        "name": "power Switch",
-        "context_event_type": "automation_triggered",
-        "context_domain": "automation",
-        "context_name": "LightOff",
-        "context_message": "triggered by state of input_boolean.lightswitch2",
-        "context_source": "state of input_boolean.lightswitch2",
-        "context_entity_id": "automation.lightoff",
-        "context_entity_id_name": "LightOff"
-    },
-    {
-        "when": "2023-11-06T23:21:46.955249+00:00",
-        "state": "off",
-        "entity_id": "binary_sensor.motion_red_iaszone_2",
-        "name": "motion_red Iaszone"
-    },
-    {
-        "when": "2023-11-06T23:22:03.953110+00:00",
-        "state": "unavailable",
-        "entity_id": "automation.motionredlighton",
-        "name": "motionredlighton"
-    },
-    {
-        "when": "2023-11-06T23:22:03.955292+00:00",
-        "state": "on",
-        "entity_id": "automation.motionredlighton",
-        "name": "motionredlighton"
-    },
-    {
-        "when": "2023-11-06T23:22:24.393277+00:00",
-        "state": "unavailable",
-        "entity_id": "automation.motionredlighton",
-        "name": "motionredlighton"
-    },
-    {
-        "when": "2023-11-06T23:22:24.395857+00:00",
-        "state": "on",
-        "entity_id": "automation.motionredlighton",
-        "name": "motionredlighton"
-    },
-    {
-        "when": "2023-11-06T23:22:52.139506+00:00",
-        "state": "unavailable",
-        "entity_id": "automation.motionredlightoff",
-        "name": "motionredlightoff"
-    },
-    {
-        "when": "2023-11-06T23:22:52.141793+00:00",
-        "state": "on",
-        "entity_id": "automation.motionredlightoff",
-        "name": "motionredlightoff"
-    },
-    {
         "when": "2023-11-06T23:23:48.905448+00:00",
         "state": "on",
-        "entity_id": "automation.motiongreenlighton",
-        "name": "motiongreenlighton",
+        "entity_id": "automation.motion_green_light_on",
+        "name": "motion_green_light_on",
         "context_user_id": "1e82e8816e8945a2a5d01a356673526b",
         "context_domain": "automation",
         "context_service": "turn_on",
@@ -458,8 +12,8 @@
     {
         "when": "2023-11-06T23:24:34.935020+00:00",
         "state": "on",
-        "entity_id": "automation.motiongreenlightoff",
-        "name": "motiongreenlightoff",
+        "entity_id": "automation.motion_green_light_off",
+        "name": "motion_green_light_off",
         "context_user_id": "1e82e8816e8945a2a5d01a356673526b",
         "context_domain": "automation",
         "context_service": "turn_on",
@@ -472,10 +26,10 @@
         "name": "motion_red Iaszone"
     },
     {
-        "name": "motionredlighton",
+        "name": "Motion_red_light_on",
         "message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "source": "state of binary_sensor.motion_red_iaszone_2",
-        "entity_id": "automation.motionredlighton",
+        "entity_id": "automation.motion_red_light_on",
         "context_id": "01HEKF93FV6TACKSRFPPMDXV7W",
         "when": "2023-11-06T23:25:26.908729+00:00",
         "domain": "automation",
@@ -491,11 +45,11 @@
         "icon": "mdi:light-switch",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motionredlighton",
+        "context_name": "Motion_red_light_on",
         "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlighton",
-        "context_entity_id_name": "motionredlighton"
+        "context_entity_id": "automation.motion_red_light_on",
+        "context_entity_id_name": "Motion_red_light_on"
     },
     {
         "name": "LightOn",
@@ -507,11 +61,11 @@
         "domain": "automation",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motionredlighton",
+        "context_name": "Motion_red_light_on",
         "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlighton",
-        "context_entity_id_name": "motionredlighton"
+        "context_entity_id": "automation.motion_red_light_on",
+        "context_entity_id_name": "Motion_red_light_on"
     },
     {
         "when": "2023-11-06T23:25:26.983969+00:00",
@@ -583,50 +137,50 @@
     {
         "when": "2023-11-06T23:27:32.297901+00:00",
         "state": "unavailable",
-        "entity_id": "automation.motionredlighton",
-        "name": "motionredlighton"
+        "entity_id": "automation.motion_red_light_on",
+        "name": "Motion_red_light_on"
     },
     {
         "when": "2023-11-06T23:27:32.302285+00:00",
         "state": "on",
-        "entity_id": "automation.motionredlighton",
-        "name": "motionredlighton"
+        "entity_id": "automation.motion_red_light_on",
+        "name": "Motion_red_light_on"
     },
     {
         "when": "2023-11-06T23:27:48.650101+00:00",
         "state": "unavailable",
-        "entity_id": "automation.motionredlightoff",
-        "name": "motionredlightoff"
+        "entity_id": "automation.motion_red_light_off",
+        "name": "motion_red_light_off"
     },
     {
         "when": "2023-11-06T23:27:48.652309+00:00",
         "state": "on",
-        "entity_id": "automation.motionredlightoff",
-        "name": "motionredlightoff"
+        "entity_id": "automation.motion_red_light_off",
+        "name": "motion_red_light_off"
     },
     {
         "when": "2023-11-06T23:28:01.344545+00:00",
         "state": "unavailable",
-        "entity_id": "automation.motiongreenlighton",
-        "name": "motiongreenlighton"
+        "entity_id": "automation.motion_green_light_on",
+        "name": "motion_green_light_on"
     },
     {
         "when": "2023-11-06T23:28:01.346720+00:00",
         "state": "on",
-        "entity_id": "automation.motiongreenlighton",
-        "name": "motiongreenlighton"
+        "entity_id": "automation.motion_green_light_on",
+        "name": "motion_green_light_on"
     },
     {
         "when": "2023-11-06T23:28:13.393790+00:00",
         "state": "unavailable",
-        "entity_id": "automation.motiongreenlightoff",
-        "name": "motiongreenlightoff"
+        "entity_id": "automation.motion_green_light_off",
+        "name": "motion_green_light_off"
     },
     {
         "when": "2023-11-06T23:28:13.396553+00:00",
         "state": "on",
-        "entity_id": "automation.motiongreenlightoff",
-        "name": "motiongreenlightoff"
+        "entity_id": "automation.motion_green_light_off",
+        "name": "motion_green_light_off"
     },
     {
         "when": "2023-11-06T23:28:30.004148+00:00",
@@ -635,10 +189,10 @@
         "name": "motion_red Iaszone"
     },
     {
-        "name": "motionredlighton",
+        "name": "Motion_red_light_on",
         "message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "source": "state of binary_sensor.motion_red_iaszone_2",
-        "entity_id": "automation.motionredlighton",
+        "entity_id": "automation.motion_red_light_on",
         "context_id": "01HEKFEP9QNF5059GAVRX5JM7G",
         "when": "2023-11-06T23:28:30.007995+00:00",
         "domain": "automation",
@@ -654,11 +208,11 @@
         "icon": "mdi:light-switch",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motionredlighton",
+        "context_name": "Motion_red_light_on",
         "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlighton",
-        "context_entity_id_name": "motionredlighton"
+        "context_entity_id": "automation.motion_red_light_on",
+        "context_entity_id_name": "Motion_red_light_on"
     },
     {
         "when": "2023-11-06T23:28:30.013549+00:00",
@@ -668,11 +222,11 @@
         "icon": "mdi:light-switch",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motionredlighton",
+        "context_name": "Motion_red_light_on",
         "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlighton",
-        "context_entity_id_name": "motionredlighton"
+        "context_entity_id": "automation.motion_red_light_on",
+        "context_entity_id_name": "Motion_red_light_on"
     },
     {
         "name": "LightOn",
@@ -684,11 +238,11 @@
         "domain": "automation",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motionredlighton",
+        "context_name": "Motion_red_light_on",
         "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlighton",
-        "context_entity_id_name": "motionredlighton"
+        "context_entity_id": "automation.motion_red_light_on",
+        "context_entity_id_name": "Motion_red_light_on"
     },
     {
         "when": "2023-11-06T23:28:30.102626+00:00",
@@ -849,14 +403,14 @@
     {
         "when": "2023-11-06T23:30:05.987964+00:00",
         "state": "unavailable",
-        "entity_id": "automation.motiongreenlightoff",
-        "name": "motiongreenlightoff"
+        "entity_id": "automation.motion_green_light_off",
+        "name": "motion_green_light_off"
     },
     {
         "when": "2023-11-06T23:30:05.990686+00:00",
         "state": "on",
-        "entity_id": "automation.motiongreenlightoff",
-        "name": "motiongreenlightoff"
+        "entity_id": "automation.motion_green_light_off",
+        "name": "motion_green_light_off"
     },
     {
         "when": "2023-11-06T23:30:15.660614+00:00",
@@ -871,10 +425,10 @@
         "name": "motion_red Iaszone"
     },
     {
-        "name": "motionredlighton",
+        "name": "Motion_red_light_on",
         "message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "source": "state of binary_sensor.motion_red_iaszone_2",
-        "entity_id": "automation.motionredlighton",
+        "entity_id": "automation.motion_red_light_on",
         "context_id": "01HEKFJ75CQS7GV2K30DF7E5WE",
         "when": "2023-11-06T23:30:25.581423+00:00",
         "domain": "automation",
@@ -890,11 +444,11 @@
         "icon": "mdi:light-switch",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motionredlighton",
+        "context_name": "Motion_red_light_on",
         "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlighton",
-        "context_entity_id_name": "motionredlighton"
+        "context_entity_id": "automation.motion_red_light_on",
+        "context_entity_id_name": "Motion_red_light_on"
     },
     {
         "when": "2023-11-06T23:30:25.589162+00:00",
@@ -904,11 +458,11 @@
         "icon": "mdi:light-switch",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motionredlighton",
+        "context_name": "Motion_red_light_on",
         "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlighton",
-        "context_entity_id_name": "motionredlighton"
+        "context_entity_id": "automation.motion_red_light_on",
+        "context_entity_id_name": "Motion_red_light_on"
     },
     {
         "name": "LightOn",
@@ -920,11 +474,11 @@
         "domain": "automation",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motionredlighton",
+        "context_name": "Motion_red_light_on",
         "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlighton",
-        "context_entity_id_name": "motionredlighton"
+        "context_entity_id": "automation.motion_red_light_on",
+        "context_entity_id_name": "Motion_red_light_on"
     },
     {
         "when": "2023-11-06T23:30:25.678962+00:00",
@@ -946,10 +500,10 @@
         "name": "motion_green Iaszone"
     },
     {
-        "name": "motiongreenlightoff",
+        "name": "motion_green_light_off",
         "message": "triggered by state of binary_sensor.motion_green_iaszone",
         "source": "state of binary_sensor.motion_green_iaszone",
-        "entity_id": "automation.motiongreenlightoff",
+        "entity_id": "automation.motion_green_light_off",
         "context_id": "01HEKFJCRHP139D8PAD2DKYHK0",
         "when": "2023-11-06T23:30:31.314103+00:00",
         "domain": "automation",
@@ -965,11 +519,11 @@
         "icon": "mdi:light-switch",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motiongreenlightoff",
+        "context_name": "motion_green_light_off",
         "context_message": "triggered by state of binary_sensor.motion_green_iaszone",
         "context_source": "state of binary_sensor.motion_green_iaszone",
-        "context_entity_id": "automation.motiongreenlightoff",
-        "context_entity_id_name": "motiongreenlightoff"
+        "context_entity_id": "automation.motion_green_light_off",
+        "context_entity_id_name": "motion_green_light_off"
     },
     {
         "when": "2023-11-06T23:30:31.322515+00:00",
@@ -979,11 +533,11 @@
         "icon": "mdi:light-switch",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motiongreenlightoff",
+        "context_name": "motion_green_light_off",
         "context_message": "triggered by state of binary_sensor.motion_green_iaszone",
         "context_source": "state of binary_sensor.motion_green_iaszone",
-        "context_entity_id": "automation.motiongreenlightoff",
-        "context_entity_id_name": "motiongreenlightoff"
+        "context_entity_id": "automation.motion_green_light_off",
+        "context_entity_id_name": "motion_green_light_off"
     },
     {
         "name": "LightOff",
@@ -995,11 +549,11 @@
         "domain": "automation",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motiongreenlightoff",
+        "context_name": "motion_green_light_off",
         "context_message": "triggered by state of binary_sensor.motion_green_iaszone",
         "context_source": "state of binary_sensor.motion_green_iaszone",
-        "context_entity_id": "automation.motiongreenlightoff",
-        "context_entity_id_name": "motiongreenlightoff"
+        "context_entity_id": "automation.motion_green_light_off",
+        "context_entity_id_name": "motion_green_light_off"
     },
     {
         "when": "2023-11-06T23:30:31.541782+00:00",
@@ -1039,10 +593,10 @@
         "name": "motion_red Iaszone"
     },
     {
-        "name": "motionredlighton",
+        "name": "Motion_red_light_on",
         "message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "source": "state of binary_sensor.motion_red_iaszone_2",
-        "entity_id": "automation.motionredlighton",
+        "entity_id": "automation.motion_red_light_on",
         "context_id": "01HEKFNQX6MAJCHWWA1BHRT62V",
         "when": "2023-11-06T23:32:21.031151+00:00",
         "domain": "automation",
@@ -1058,11 +612,11 @@
         "icon": "mdi:light-switch",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motionredlighton",
+        "context_name": "Motion_red_light_on",
         "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlighton",
-        "context_entity_id_name": "motionredlighton"
+        "context_entity_id": "automation.motion_red_light_on",
+        "context_entity_id_name": "Motion_red_light_on"
     },
     {
         "when": "2023-11-06T23:32:21.035880+00:00",
@@ -1072,11 +626,11 @@
         "icon": "mdi:light-switch",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motionredlighton",
+        "context_name": "Motion_red_light_on",
         "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlighton",
-        "context_entity_id_name": "motionredlighton"
+        "context_entity_id": "automation.motion_red_light_on",
+        "context_entity_id_name": "Motion_red_light_on"
     },
     {
         "name": "LightOn",
@@ -1088,11 +642,11 @@
         "domain": "automation",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motionredlighton",
+        "context_name": "Motion_red_light_on",
         "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlighton",
-        "context_entity_id_name": "motionredlighton"
+        "context_entity_id": "automation.motion_red_light_on",
+        "context_entity_id_name": "Motion_red_light_on"
     },
     {
         "when": "2023-11-06T23:32:21.120239+00:00",
@@ -1169,14 +723,14 @@
     {
         "when": "2023-11-06T23:32:53.257898+00:00",
         "state": "unavailable",
-        "entity_id": "automation.motiongreenlighton",
-        "name": "motiongreenlighton"
+        "entity_id": "automation.motion_green_light_on",
+        "name": "motion_green_light_on"
     },
     {
         "when": "2023-11-06T23:32:53.261352+00:00",
         "state": "on",
-        "entity_id": "automation.motiongreenlighton",
-        "name": "motiongreenlighton"
+        "entity_id": "automation.motion_green_light_on",
+        "name": "motion_green_light_on"
     },
     {
         "when": "2023-11-06T23:33:25.737348+00:00",
@@ -1197,10 +751,10 @@
         "name": "motion_red Iaszone"
     },
     {
-        "name": "motionredlighton",
+        "name": "Motion_red_light_on",
         "message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "source": "state of binary_sensor.motion_red_iaszone_2",
-        "entity_id": "automation.motionredlighton",
+        "entity_id": "automation.motion_red_light_on",
         "context_id": "01HEKFQX1ZGF113R8B7BXKQTM2",
         "when": "2023-11-06T23:33:31.840077+00:00",
         "domain": "automation",
@@ -1216,11 +770,11 @@
         "icon": "mdi:light-switch",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motionredlighton",
+        "context_name": "Motion_red_light_on",
         "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlighton",
-        "context_entity_id_name": "motionredlighton"
+        "context_entity_id": "automation.motion_red_light_on",
+        "context_entity_id_name": "Motion_red_light_on"
     },
     {
         "when": "2023-11-06T23:33:31.845203+00:00",
@@ -1230,11 +784,11 @@
         "icon": "mdi:light-switch",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motionredlighton",
+        "context_name": "Motion_red_light_on",
         "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlighton",
-        "context_entity_id_name": "motionredlighton"
+        "context_entity_id": "automation.motion_red_light_on",
+        "context_entity_id_name": "Motion_red_light_on"
     },
     {
         "name": "LightOn",
@@ -1246,11 +800,11 @@
         "domain": "automation",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motionredlighton",
+        "context_name": "Motion_red_light_on",
         "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlighton",
-        "context_entity_id_name": "motionredlighton"
+        "context_entity_id": "automation.motion_red_light_on",
+        "context_entity_id_name": "Motion_red_light_on"
     },
     {
         "when": "2023-11-06T23:33:31.923750+00:00",
@@ -1272,10 +826,10 @@
         "name": "motion_green Iaszone"
     },
     {
-        "name": "motiongreenlightoff",
+        "name": "motion_green_light_off",
         "message": "triggered by state of binary_sensor.motion_green_iaszone",
         "source": "state of binary_sensor.motion_green_iaszone",
-        "entity_id": "automation.motiongreenlightoff",
+        "entity_id": "automation.motion_green_light_off",
         "context_id": "01HEKFRDMFNMD0A2CJBCEFDJ75",
         "when": "2023-11-06T23:33:48.816037+00:00",
         "domain": "automation",
@@ -1291,11 +845,11 @@
         "icon": "mdi:light-switch",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motiongreenlightoff",
+        "context_name": "motion_green_light_off",
         "context_message": "triggered by state of binary_sensor.motion_green_iaszone",
         "context_source": "state of binary_sensor.motion_green_iaszone",
-        "context_entity_id": "automation.motiongreenlightoff",
-        "context_entity_id_name": "motiongreenlightoff"
+        "context_entity_id": "automation.motion_green_light_off",
+        "context_entity_id_name": "motion_green_light_off"
     },
     {
         "when": "2023-11-06T23:33:48.821428+00:00",
@@ -1305,11 +859,11 @@
         "icon": "mdi:light-switch",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motiongreenlightoff",
+        "context_name": "motion_green_light_off",
         "context_message": "triggered by state of binary_sensor.motion_green_iaszone",
         "context_source": "state of binary_sensor.motion_green_iaszone",
-        "context_entity_id": "automation.motiongreenlightoff",
-        "context_entity_id_name": "motiongreenlightoff"
+        "context_entity_id": "automation.motion_green_light_off",
+        "context_entity_id_name": "motion_green_light_off"
     },
     {
         "name": "LightOff",
@@ -1321,11 +875,11 @@
         "domain": "automation",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motiongreenlightoff",
+        "context_name": "motion_green_light_off",
         "context_message": "triggered by state of binary_sensor.motion_green_iaszone",
         "context_source": "state of binary_sensor.motion_green_iaszone",
-        "context_entity_id": "automation.motiongreenlightoff",
-        "context_entity_id_name": "motiongreenlightoff"
+        "context_entity_id": "automation.motion_green_light_off",
+        "context_entity_id_name": "motion_green_light_off"
     },
     {
         "when": "2023-11-06T23:33:48.904701+00:00",
@@ -1359,10 +913,10 @@
         "name": "motion_green Iaszone"
     },
     {
-        "name": "motiongreenlighton",
+        "name": "motion_green_light_on",
         "message": "triggered by state of binary_sensor.motion_green_iaszone",
         "source": "state of binary_sensor.motion_green_iaszone",
-        "entity_id": "automation.motiongreenlighton",
+        "entity_id": "automation.motion_green_light_on",
         "context_id": "01HEKFXNJGK349BW2BSD2PCTQ3",
         "when": "2023-11-06T23:36:40.784559+00:00",
         "domain": "automation",
@@ -1378,11 +932,11 @@
         "icon": "mdi:light-switch",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motiongreenlighton",
+        "context_name": "motion_green_light_on",
         "context_message": "triggered by state of binary_sensor.motion_green_iaszone",
         "context_source": "state of binary_sensor.motion_green_iaszone",
-        "context_entity_id": "automation.motiongreenlighton",
-        "context_entity_id_name": "motiongreenlighton"
+        "context_entity_id": "automation.motion_green_light_on",
+        "context_entity_id_name": "motion_green_light_on"
     },
     {
         "when": "2023-11-06T23:36:40.792916+00:00",
@@ -1392,11 +946,11 @@
         "icon": "mdi:light-switch",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motiongreenlighton",
+        "context_name": "motion_green_light_on",
         "context_message": "triggered by state of binary_sensor.motion_green_iaszone",
         "context_source": "state of binary_sensor.motion_green_iaszone",
-        "context_entity_id": "automation.motiongreenlighton",
-        "context_entity_id_name": "motiongreenlighton"
+        "context_entity_id": "automation.motion_green_light_on",
+        "context_entity_id_name": "motion_green_light_on"
     },
     {
         "name": "LightOn",
@@ -1408,11 +962,11 @@
         "domain": "automation",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motiongreenlighton",
+        "context_name": "motion_green_light_on",
         "context_message": "triggered by state of binary_sensor.motion_green_iaszone",
         "context_source": "state of binary_sensor.motion_green_iaszone",
-        "context_entity_id": "automation.motiongreenlighton",
-        "context_entity_id_name": "motiongreenlighton"
+        "context_entity_id": "automation.motion_green_light_on",
+        "context_entity_id_name": "motion_green_light_on"
     },
     {
         "when": "2023-11-06T23:36:40.877182+00:00",
@@ -1434,10 +988,10 @@
         "name": "motion_red Iaszone"
     },
     {
-        "name": "motionredlightoff",
+        "name": "motion_red_light_off",
         "message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "source": "state of binary_sensor.motion_red_iaszone_2",
-        "entity_id": "automation.motionredlightoff",
+        "entity_id": "automation.motion_red_light_off",
         "context_id": "01HEKFXTTSYW4TD6JAM8JVXHX4",
         "when": "2023-11-06T23:36:46.169450+00:00",
         "domain": "automation",
@@ -1453,11 +1007,11 @@
         "icon": "mdi:light-switch",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motionredlightoff",
+        "context_name": "motion_red_light_off",
         "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlightoff",
-        "context_entity_id_name": "motionredlightoff"
+        "context_entity_id": "automation.motion_red_light_off",
+        "context_entity_id_name": "motion_red_light_off"
     },
     {
         "when": "2023-11-06T23:36:46.183641+00:00",
@@ -1467,11 +1021,11 @@
         "icon": "mdi:light-switch",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motionredlightoff",
+        "context_name": "motion_red_light_off",
         "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlightoff",
-        "context_entity_id_name": "motionredlightoff"
+        "context_entity_id": "automation.motion_red_light_off",
+        "context_entity_id_name": "motion_red_light_off"
     },
     {
         "name": "LightOff",
@@ -1483,11 +1037,11 @@
         "domain": "automation",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motionredlightoff",
+        "context_name": "motion_red_light_off",
         "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlightoff",
-        "context_entity_id_name": "motionredlightoff"
+        "context_entity_id": "automation.motion_red_light_off",
+        "context_entity_id_name": "motion_red_light_off"
     },
     {
         "when": "2023-11-06T23:36:46.270338+00:00",
@@ -1557,10 +1111,10 @@
         "name": "motion_red Iaszone"
     },
     {
-        "name": "motionredlighton",
+        "name": "Motion_red_light_on",
         "message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "source": "state of binary_sensor.motion_red_iaszone_2",
-        "entity_id": "automation.motionredlighton",
+        "entity_id": "automation.motion_red_light_on",
         "context_id": "01HEKG00BJ9CQJ850MAV0VHMW8",
         "when": "2023-11-06T23:37:57.363414+00:00",
         "domain": "automation",
@@ -1576,11 +1130,11 @@
         "icon": "mdi:light-switch",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motionredlighton",
+        "context_name": "Motion_red_light_on",
         "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlighton",
-        "context_entity_id_name": "motionredlighton"
+        "context_entity_id": "automation.motion_red_light_on",
+        "context_entity_id_name": "Motion_red_light_on"
     },
     {
         "name": "LightOn",
@@ -1592,11 +1146,11 @@
         "domain": "automation",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motionredlighton",
+        "context_name": "Motion_red_light_on",
         "context_message": "triggered by state of binary_sensor.motion_red_iaszone_2",
         "context_source": "state of binary_sensor.motion_red_iaszone_2",
-        "context_entity_id": "automation.motionredlighton",
-        "context_entity_id_name": "motionredlighton"
+        "context_entity_id": "automation.motion_red_light_on",
+        "context_entity_id_name": "Motion_red_light_on"
     },
     {
         "when": "2023-11-06T23:38:00.080059+00:00",
@@ -1605,10 +1159,10 @@
         "name": "motion_green Iaszone"
     },
     {
-        "name": "motiongreenlightoff",
+        "name": "motion_green_light_off",
         "message": "triggered by state of binary_sensor.motion_green_iaszone",
         "source": "state of binary_sensor.motion_green_iaszone",
-        "entity_id": "automation.motiongreenlightoff",
+        "entity_id": "automation.motion_green_light_off",
         "context_id": "01HEKG030K9GQAKR4YQX1GCWZE",
         "when": "2023-11-06T23:38:00.084175+00:00",
         "domain": "automation",
@@ -1624,11 +1178,11 @@
         "icon": "mdi:light-switch",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motiongreenlightoff",
+        "context_name": "motion_green_light_off",
         "context_message": "triggered by state of binary_sensor.motion_green_iaszone",
         "context_source": "state of binary_sensor.motion_green_iaszone",
-        "context_entity_id": "automation.motiongreenlightoff",
-        "context_entity_id_name": "motiongreenlightoff"
+        "context_entity_id": "automation.motion_green_light_off",
+        "context_entity_id_name": "motion_green_light_off"
     },
     {
         "when": "2023-11-06T23:38:00.091360+00:00",
@@ -1638,11 +1192,11 @@
         "icon": "mdi:light-switch",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motiongreenlightoff",
+        "context_name": "motion_green_light_off",
         "context_message": "triggered by state of binary_sensor.motion_green_iaszone",
         "context_source": "state of binary_sensor.motion_green_iaszone",
-        "context_entity_id": "automation.motiongreenlightoff",
-        "context_entity_id_name": "motiongreenlightoff"
+        "context_entity_id": "automation.motion_green_light_off",
+        "context_entity_id_name": "motion_green_light_off"
     },
     {
         "name": "LightOff",
@@ -1654,11 +1208,11 @@
         "domain": "automation",
         "context_event_type": "automation_triggered",
         "context_domain": "automation",
-        "context_name": "motiongreenlightoff",
+        "context_name": "motion_green_light_off",
         "context_message": "triggered by state of binary_sensor.motion_green_iaszone",
         "context_source": "state of binary_sensor.motion_green_iaszone",
-        "context_entity_id": "automation.motiongreenlightoff",
-        "context_entity_id_name": "motiongreenlightoff"
+        "context_entity_id": "automation.motion_green_light_off",
+        "context_entity_id_name": "motion_green_light_off"
     },
     {
         "when": "2023-11-06T23:38:00.163203+00:00",
@@ -1684,307 +1238,5 @@
         "state": "off",
         "entity_id": "binary_sensor.motion_red_iaszone_2",
         "name": "motion_red Iaszone"
-    },
-    {
-        "when": "2023-11-06T23:55:23.512361+00:00",
-        "state": "on",
-        "entity_id": "binary_sensor.motion_green_iaszone",
-        "name": "motion_green Iaszone"
-    },
-    {
-        "name": "motiongreenlighton",
-        "message": "triggered by state of binary_sensor.motion_green_iaszone",
-        "source": "state of binary_sensor.motion_green_iaszone",
-        "entity_id": "automation.motiongreenlighton",
-        "context_id": "01HEKGZY01FSGFF6RYN3F22FS4",
-        "when": "2023-11-06T23:55:23.521969+00:00",
-        "domain": "automation",
-        "context_state": "on",
-        "context_entity_id": "binary_sensor.motion_green_iaszone",
-        "context_entity_id_name": "motion_green Iaszone"
-    },
-    {
-        "when": "2023-11-06T23:55:23.530648+00:00",
-        "state": "on",
-        "entity_id": "input_boolean.lightswitch1",
-        "name": "LightSwitch1",
-        "icon": "mdi:light-switch",
-        "context_event_type": "automation_triggered",
-        "context_domain": "automation",
-        "context_name": "motiongreenlighton",
-        "context_message": "triggered by state of binary_sensor.motion_green_iaszone",
-        "context_source": "state of binary_sensor.motion_green_iaszone",
-        "context_entity_id": "automation.motiongreenlighton",
-        "context_entity_id_name": "motiongreenlighton"
-    },
-    {
-        "when": "2023-11-06T23:55:23.530915+00:00",
-        "state": "on",
-        "entity_id": "input_boolean.lightswitch2",
-        "name": "LightSwitch2",
-        "icon": "mdi:light-switch",
-        "context_event_type": "automation_triggered",
-        "context_domain": "automation",
-        "context_name": "motiongreenlighton",
-        "context_message": "triggered by state of binary_sensor.motion_green_iaszone",
-        "context_source": "state of binary_sensor.motion_green_iaszone",
-        "context_entity_id": "automation.motiongreenlighton",
-        "context_entity_id_name": "motiongreenlighton"
-    },
-    {
-        "name": "LightOn",
-        "message": "triggered by state of input_boolean.lightswitch1",
-        "source": "state of input_boolean.lightswitch1",
-        "entity_id": "automation.lighton",
-        "context_id": "01HEKGZY0BMAAMQDSG9GR31K97",
-        "when": "2023-11-06T23:55:23.536019+00:00",
-        "domain": "automation",
-        "context_event_type": "automation_triggered",
-        "context_domain": "automation",
-        "context_name": "motiongreenlighton",
-        "context_message": "triggered by state of binary_sensor.motion_green_iaszone",
-        "context_source": "state of binary_sensor.motion_green_iaszone",
-        "context_entity_id": "automation.motiongreenlighton",
-        "context_entity_id_name": "motiongreenlighton"
-    },
-    {
-        "when": "2023-11-06T23:55:23.612089+00:00",
-        "state": "on",
-        "entity_id": "switch.power_switch",
-        "name": "power Switch",
-        "context_event_type": "automation_triggered",
-        "context_domain": "automation",
-        "context_name": "LightOn",
-        "context_message": "triggered by state of input_boolean.lightswitch1",
-        "context_source": "state of input_boolean.lightswitch1",
-        "context_entity_id": "automation.lighton",
-        "context_entity_id_name": "LightOn"
-    },
-    {
-        "when": "2023-11-06T23:56:28.015518+00:00",
-        "state": "off",
-        "entity_id": "binary_sensor.motion_green_iaszone",
-        "name": "motion_green Iaszone"
-    },
-    {
-        "when": "2023-11-06T23:56:34.143464+00:00",
-        "state": "on",
-        "entity_id": "binary_sensor.motion_green_iaszone",
-        "name": "motion_green Iaszone"
-    },
-    {
-        "name": "motiongreenlightoff",
-        "message": "triggered by state of binary_sensor.motion_green_iaszone",
-        "source": "state of binary_sensor.motion_green_iaszone",
-        "entity_id": "automation.motiongreenlightoff",
-        "context_id": "01HEKH22Z8PHKD354VW0F06G8Q",
-        "when": "2023-11-06T23:56:34.152959+00:00",
-        "domain": "automation",
-        "context_state": "on",
-        "context_entity_id": "binary_sensor.motion_green_iaszone",
-        "context_entity_id_name": "motion_green Iaszone"
-    },
-    {
-        "when": "2023-11-06T23:56:34.161358+00:00",
-        "state": "off",
-        "entity_id": "input_boolean.lightswitch1",
-        "name": "LightSwitch1",
-        "icon": "mdi:light-switch",
-        "context_event_type": "automation_triggered",
-        "context_domain": "automation",
-        "context_name": "motiongreenlightoff",
-        "context_message": "triggered by state of binary_sensor.motion_green_iaszone",
-        "context_source": "state of binary_sensor.motion_green_iaszone",
-        "context_entity_id": "automation.motiongreenlightoff",
-        "context_entity_id_name": "motiongreenlightoff"
-    },
-    {
-        "when": "2023-11-06T23:56:34.161663+00:00",
-        "state": "off",
-        "entity_id": "input_boolean.lightswitch2",
-        "name": "LightSwitch2",
-        "icon": "mdi:light-switch",
-        "context_event_type": "automation_triggered",
-        "context_domain": "automation",
-        "context_name": "motiongreenlightoff",
-        "context_message": "triggered by state of binary_sensor.motion_green_iaszone",
-        "context_source": "state of binary_sensor.motion_green_iaszone",
-        "context_entity_id": "automation.motiongreenlightoff",
-        "context_entity_id_name": "motiongreenlightoff"
-    },
-    {
-        "name": "LightOff",
-        "message": "triggered by state of input_boolean.lightswitch1",
-        "source": "state of input_boolean.lightswitch1",
-        "entity_id": "automation.lightoff",
-        "context_id": "01HEKH22ZPPCDXNPH9YW6EA5RT",
-        "when": "2023-11-06T23:56:34.166851+00:00",
-        "domain": "automation",
-        "context_event_type": "automation_triggered",
-        "context_domain": "automation",
-        "context_name": "motiongreenlightoff",
-        "context_message": "triggered by state of binary_sensor.motion_green_iaszone",
-        "context_source": "state of binary_sensor.motion_green_iaszone",
-        "context_entity_id": "automation.motiongreenlightoff",
-        "context_entity_id_name": "motiongreenlightoff"
-    },
-    {
-        "when": "2023-11-06T23:56:34.252405+00:00",
-        "state": "off",
-        "entity_id": "switch.power_switch",
-        "name": "power Switch",
-        "context_event_type": "automation_triggered",
-        "context_domain": "automation",
-        "context_name": "LightOff",
-        "context_message": "triggered by state of input_boolean.lightswitch1",
-        "context_source": "state of input_boolean.lightswitch1",
-        "context_entity_id": "automation.lightoff",
-        "context_entity_id_name": "LightOff"
-    },
-    {
-        "when": "2023-11-06T23:58:42.963945+00:00",
-        "state": "off",
-        "entity_id": "binary_sensor.motion_green_iaszone",
-        "name": "motion_green Iaszone"
-    },
-    {
-        "when": "2023-11-07T00:10:32.988973+00:00",
-        "state": "on",
-        "entity_id": "binary_sensor.motion_green_iaszone",
-        "name": "motion_green Iaszone"
-    },
-    {
-        "name": "motiongreenlighton",
-        "message": "triggered by state of binary_sensor.motion_green_iaszone",
-        "source": "state of binary_sensor.motion_green_iaszone",
-        "entity_id": "automation.motiongreenlighton",
-        "context_id": "01HEKHVP515D9RMSTP89QE4GAH",
-        "when": "2023-11-07T00:10:32.994028+00:00",
-        "domain": "automation",
-        "context_state": "on",
-        "context_entity_id": "binary_sensor.motion_green_iaszone",
-        "context_entity_id_name": "motion_green Iaszone"
-    },
-    {
-        "when": "2023-11-07T00:10:33.001586+00:00",
-        "state": "on",
-        "entity_id": "input_boolean.lightswitch1",
-        "name": "LightSwitch1",
-        "icon": "mdi:light-switch",
-        "context_event_type": "automation_triggered",
-        "context_domain": "automation",
-        "context_name": "motiongreenlighton",
-        "context_message": "triggered by state of binary_sensor.motion_green_iaszone",
-        "context_source": "state of binary_sensor.motion_green_iaszone",
-        "context_entity_id": "automation.motiongreenlighton",
-        "context_entity_id_name": "motiongreenlighton"
-    },
-    {
-        "when": "2023-11-07T00:10:33.001879+00:00",
-        "state": "on",
-        "entity_id": "input_boolean.lightswitch2",
-        "name": "LightSwitch2",
-        "icon": "mdi:light-switch",
-        "context_event_type": "automation_triggered",
-        "context_domain": "automation",
-        "context_name": "motiongreenlighton",
-        "context_message": "triggered by state of binary_sensor.motion_green_iaszone",
-        "context_source": "state of binary_sensor.motion_green_iaszone",
-        "context_entity_id": "automation.motiongreenlighton",
-        "context_entity_id_name": "motiongreenlighton"
-    },
-    {
-        "name": "LightOn",
-        "message": "triggered by state of input_boolean.lightswitch1",
-        "source": "state of input_boolean.lightswitch1",
-        "entity_id": "automation.lighton",
-        "context_id": "01HEKHVP5B6TRNVBGHKBZ7AXKJ",
-        "when": "2023-11-07T00:10:33.004253+00:00",
-        "domain": "automation",
-        "context_event_type": "automation_triggered",
-        "context_domain": "automation",
-        "context_name": "motiongreenlighton",
-        "context_message": "triggered by state of binary_sensor.motion_green_iaszone",
-        "context_source": "state of binary_sensor.motion_green_iaszone",
-        "context_entity_id": "automation.motiongreenlighton",
-        "context_entity_id_name": "motiongreenlighton"
-    },
-    {
-        "when": "2023-11-07T00:10:33.082704+00:00",
-        "state": "on",
-        "entity_id": "switch.power_switch",
-        "name": "power Switch",
-        "context_event_type": "automation_triggered",
-        "context_domain": "automation",
-        "context_name": "LightOn",
-        "context_message": "triggered by state of input_boolean.lightswitch1",
-        "context_source": "state of input_boolean.lightswitch1",
-        "context_entity_id": "automation.lighton",
-        "context_entity_id_name": "LightOn"
-    },
-    {
-        "when": "2023-11-07T00:10:41.208567+00:00",
-        "state": "off",
-        "entity_id": "input_boolean.lightswitch1",
-        "name": "LightSwitch1",
-        "icon": "mdi:light-switch",
-        "context_user_id": "1e82e8816e8945a2a5d01a356673526b",
-        "context_domain": "input_boolean",
-        "context_service": "turn_off",
-        "context_event_type": "call_service"
-    },
-    {
-        "name": "LightOff",
-        "message": "triggered by state of input_boolean.lightswitch1",
-        "source": "state of input_boolean.lightswitch1",
-        "entity_id": "automation.lightoff",
-        "context_id": "01HEKHVY5TKNS2G9DMZF78S4WM",
-        "when": "2023-11-07T00:10:41.210429+00:00",
-        "domain": "automation",
-        "context_domain": "input_boolean",
-        "context_service": "turn_off",
-        "context_event_type": "call_service"
-    },
-    {
-        "when": "2023-11-07T00:10:41.279173+00:00",
-        "state": "off",
-        "entity_id": "switch.power_switch",
-        "name": "power Switch",
-        "context_event_type": "automation_triggered",
-        "context_domain": "automation",
-        "context_name": "LightOff",
-        "context_message": "triggered by state of input_boolean.lightswitch1",
-        "context_source": "state of input_boolean.lightswitch1",
-        "context_entity_id": "automation.lightoff",
-        "context_entity_id_name": "LightOff"
-    },
-    {
-        "when": "2023-11-07T00:10:42.286918+00:00",
-        "state": "off",
-        "entity_id": "input_boolean.lightswitch2",
-        "name": "LightSwitch2",
-        "icon": "mdi:light-switch",
-        "context_user_id": "1e82e8816e8945a2a5d01a356673526b",
-        "context_domain": "input_boolean",
-        "context_service": "turn_off",
-        "context_event_type": "call_service"
-    },
-    {
-        "name": "LightOff",
-        "message": "triggered by state of input_boolean.lightswitch2",
-        "source": "state of input_boolean.lightswitch2",
-        "entity_id": "automation.lightoff",
-        "context_id": "01HEKHVZ7G6T3D9JSDBK38MB6R",
-        "when": "2023-11-07T00:10:42.288758+00:00",
-        "domain": "automation",
-        "context_domain": "input_boolean",
-        "context_service": "turn_off",
-        "context_event_type": "call_service"
-    },
-    {
-        "when": "2023-11-07T00:11:37.364179+00:00",
-        "state": "off",
-        "entity_id": "binary_sensor.motion_green_iaszone",
-        "name": "motion_green Iaszone"
     }
 ]

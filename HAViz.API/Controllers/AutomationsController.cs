@@ -30,6 +30,7 @@ namespace HAViz.API.Controllers
         {
             await Console.Out.WriteLineAsync($"Requesting : {name}");
             string id = await _service.GetAutomationIdByName(name);
+              
             await Console.Out.WriteLineAsync(id);
             return await _service.GetAutomationYamlAsync(id);
         }

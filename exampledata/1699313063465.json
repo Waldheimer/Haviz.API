@@ -1,0 +1,34 @@
+{
+    "id": "1699313063465",
+    "alias": "motion_green_light_off",
+    "description": "",
+    "trigger": [
+        {
+            "type": "motion",
+            "platform": "device",
+            "device_id": "10517b991175761b5ef6b1c8a789900e",
+            "entity_id": "binary_sensor.motion_green_iaszone",
+            "domain": "binary_sensor"
+        }
+    ],
+    "condition": [
+        {
+            "condition": "state",
+            "entity_id": "input_boolean.lightswitch1",
+            "state": "on"
+        }
+    ],
+    "action": [
+        {
+            "service": "homeassistant.turn_off",
+            "data": {},
+            "target": {
+                "entity_id": [
+                    "input_boolean.lightswitch1",
+                    "input_boolean.lightswitch2"
+                ]
+            }
+        }
+    ],
+    "mode": "single"
+}

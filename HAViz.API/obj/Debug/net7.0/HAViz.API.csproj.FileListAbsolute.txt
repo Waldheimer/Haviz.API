@@ -130,3 +130,4 @@ D:\__Bachelor__\BA_GIT\API\HAViz.API\obj\Debug\net7.0\refint\HAViz.API.dll
 D:\__Bachelor__\BA_GIT\API\HAViz.API\obj\Debug\net7.0\HAViz.API.pdb
 D:\__Bachelor__\BA_GIT\API\HAViz.API\obj\Debug\net7.0\HAViz.API.genruntimeconfig.cache
 D:\__Bachelor__\BA_GIT\API\HAViz.API\obj\Debug\net7.0\ref\HAViz.API.dll
+D:\__Bachelor__\BA_GIT\API\HAViz.API\bin\Debug\net7.0\appsettings - Kopie.json

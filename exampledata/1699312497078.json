@@ -1,0 +1,33 @@
+{
+    "id": "1699312497078",
+    "alias": "LightOff",
+    "description": "",
+    "trigger": [
+        {
+            "platform": "state",
+            "entity_id": [
+                "input_boolean.lightswitch1"
+            ],
+            "from": "on",
+            "to": "off"
+        },
+        {
+            "platform": "state",
+            "entity_id": [
+                "input_boolean.lightswitch2"
+            ],
+            "from": "on",
+            "to": "off"
+        }
+    ],
+    "condition": [],
+    "action": [
+        {
+            "type": "turn_off",
+            "device_id": "ddef604f97f3b78eb731824263bdfc19",
+            "entity_id": "switch.power_switch",
+            "domain": "switch"
+        }
+    ],
+    "mode": "single"
+}

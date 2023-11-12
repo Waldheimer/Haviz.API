@@ -1,77 +1,44 @@
-# API & SharedData Library
+## Verbindung zu Homeassistant
+- Generierung des LangzeitToken
 
-> The .json Files need to be in an accessable Place and the the Location has to updated in the appsettings.json 
-> like "API_Mock_URL": "D:/Data/" for the API Project to run.
+## API
 
+### Beispieldatensätze
 
-- [x] HAViz.API
-    - [x] Controllers
-        - [x] LogbookController
-            - [x] **/api/logbook** : Complete Logbook
-            - [x] **/api/logbook/filtered** : Only Entries from selected Entities/Automations
-        - [x] EntitiesController
-            - [x] **/api/entities** : All available Entities
-            - [x] **/api/entities/filtered** : Only selected Entities
-            - [x] **/api/entities/list** : Only the Names of all availiable Entities
-            - [x] **/api/entities/states** : States of all available Entitites
-            - [x] **/api/entities/id** : Only the State of the Entity with given id
-        - [x] AutomationsController
-            - [x] **/api/automations** : Get the Names of all available Automations
-            - [x] **/api/automations/states** : Get the States of all available Automations 
-            - [x] **/api/automations/yaml/name** : Get the ID of the Automation with the given name, then get the YAML-Representation of the Automation with the returned id
-    - [x] Services
-        - [x] IHA_DataService
-        - [x] HA_DataService
-            - [x] LogBook
-                - [x] **async Task<IEnumerable<LogEntry>>** GetLogAsync()
-                - [x] **async Task<IEnumerable<LogEntry>>** GetFilteredLogAsync()
-            - [x] Entities
-                - [x] **List<string>** GetEntityFilter()
-                - [x] **async Task<IEnumerable<Entity>>** GetAllEntitiesAsync()
-                - [x] **async Task<IEnumerable<Entity>>** GetFilteredEntitiesAsync(List<tring> filters)
-                - [x] **async Task<IEnumerable<string>>** GetAllEntityNamesAsync()
-                - [x] **async Task<Entity>** GetEntityInfoAsync(string id)
-                - [x] **async Task<IEnumerable<AutomationStateEntry>>** GetEntityStatesAsync()
-            - [x] Automations
-                - [x] **async Task<IEnumerable<string>>** GetAllAutomationsAsync()
-                - [x] **async Task<IEnumerable<AutomationStateEntry>>** GetAutomationStatesAsync()
-                - [x] **async Task<string>** GetAutomationIdByName(string name)
-                - [x] **async Task<string>** GetAutomationYamlAsync(string id)
-        - [x] HA_MockService
-- [x] HAViz.Shared
-    - [x] Models
-        - [x] LogEntry
-        - [x] Entity
-        - [x] Automation
-        - [x] YamlDefintion
-        - [x] Trigger
-        - [x] Condition
-        - [x] Action
-        - [x] For
-        - [x] Data
-        - [x] Target
-        - [x] AutomationStateEntry
-        - [x] AutomationByEvent
-        - [x] EventByAutomation
-        - [x] NoAction
+Dem Projekt liegen 2 Beispieldatensätze bei
+1. Der Ordner **Set_0** enthält den Datensatz der während der gesamten Entwicklungszeit verwendet wurde
+2. Der Ordner **Set_1** enthält den Datensatz der für die Fallstudie erstellt wurde
+Beide Ordner enthalten auch die entsprechende Liste der **Entity_Includes** die in der **appsettings.json** eingefügt werden sollen.
 
-- [!] UnityProject
-    - [x] Entities
-        - [x] Load all Entities
-        - [x] Display all Entities in a Circle at the Center
-        - [x] Make Entitites Clickable / Drag-Dropable
-        - [x] Show Entity_Id above the Dummy
-            - [x] Always turn Text to face camera
-    - [!] Events
-        - [x] Load all Events
-        - [x] Divide Events in NoAction/Automation-Events
-            - [!] NoAction Events
-                - [x] Draw a Line between the Event-Entity to the Home Entity
-                - [!] Indicate the Information-Flow from the Event Entity to the Home Entity
-            - [!] Automation Events
-                - [x] Get the YAML Definition of the Automation
-                - [x] Get a List of all Trigger/Conditions/Actions
-                - [x] Calculate a Probability for each Condition of beeing responsible for the Execution of the Automation
-                - [x] Draw a Line for each Trigger/Action/Condition
-                - [x] Colorize the different Parts of the Automation
-                - [!] Indicate the Information-Flow Direction
+### Setup
+- Setzen der benötigten Werte in *appsettings.json*
+    - URL der Homeassistant API
+    - Bearer Token zur JWT-Authentifizierung mit der Homeassistant API
+    - lokaler Pfad zu den Offline-Daten
+    - Liste der herauszufilternden Entitäten
+    ![appsettings.json](/API-appsettings.png){width=450}
+- Setzen der DataService Implementierung per DependencyInjection für Online-/OfflineDaten
+    - Mock_DataService für die konsistenten Offline Daten
+    - HA_DataService für die direkte Verbindung mit der Homeassistant-API
+![program.cs](/API-DI-DataService.png){width=450}
+
+### Endpunkte
+- Entities
+    - `/api/entities` &rArr; `Task<IEnumerable<Entity>>`
+    - `/api/entities/filtered` &rArr; `Task<IEnumerable<Entity>?>`
+    - `/api/entities/list` &rArr; `Task<IEnumerable<string>>`
+    - `/api/entites/states` &rArr; `Task<IEnumerable<AutomationStateEntry>>`
+    - `/api/entites/{id}` &rArr; `Task<Entity>`
+- Automations
+    - `/api/automations` &rArr; `Task<IEnumerable<string>?>`
+    - `/api/automations/states` &rArr; `Task<IEnumerable<AutomationStateEntry>?>`
+    - `/api/automations/yaml/{name}` &rArr; `Task<YamlDefinition?>`
+- Logbook
+    - `/api/logbook` &rArr; `Task<IEnumerable<LogEntry>?>`
+    - `/api/logbook/filtered` &rArr; `Task<IEnumerable<LogEntry>?>`
+
+## Unity
+
+### Setup
+Unter dem Pfad **/Assets/StreamingAssets/appsettings.json** liegt die Konfigurationsdatei welche die *URL* der API enthält.
+![appsettings.json](/Unity-appsettings.png){width=350}

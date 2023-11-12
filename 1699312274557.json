@@ -1,0 +1,43 @@
+{
+    "id": "1699312274557",
+    "alias": "motionredlightoff",
+    "description": "",
+    "trigger": [
+        {
+            "type": "motion",
+            "platform": "device",
+            "device_id": "10f803010844988b0cb1b7439052b79e",
+            "entity_id": "binary_sensor.motion_red_iaszone_2",
+            "domain": "binary_sensor",
+            "for": {
+                "hours": 0,
+                "minutes": 0,
+                "seconds": 0
+            }
+        }
+    ],
+    "condition": [
+        {
+            "condition": "state",
+            "entity_id": "input_boolean.lightswitch2",
+            "state": "on"
+        }
+    ],
+    "action": [
+        {
+            "service": "homeassistant.turn_off",
+            "data": {},
+            "target": {
+                "entity_id": "input_boolean.lightswitch1"
+            }
+        },
+        {
+            "service": "homeassistant.turn_off",
+            "data": {},
+            "target": {
+                "entity_id": "input_boolean.lightswitch2"
+            }
+        }
+    ],
+    "mode": "single"
+}

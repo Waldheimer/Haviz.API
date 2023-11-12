@@ -1,0 +1,7 @@
+"Entity_Includes": [
+    "binary_sensor.motion_red_iaszone_2",
+    "binary_sensor.motion_green_iaszone",
+    "switch.power_switch",
+    "input_boolean.lightswitch1",
+    "input_boolean.lightswitch2"
+  ]

@@ -25,6 +25,16 @@ namespace HAViz.API.Services
         //  -----------------------------------------------------------------------------
         #endregion
 
+        #region Filter
+        //  Get the Filter for the wanted Entities from appsettings.json
+        public List<string>? GetEntityFilter()
+        {
+            return _configuration.GetSection("Entity_Includes").Get<List<string>>();
+        }
+        //  -----------------------------------------------------------------------------
+
+        #endregion
+
         #region Logbook
         //  Read the complete or the filtered Logbook from Homeassistant
         public async Task<IEnumerable<LogEntry>?> GetLogAsync()
@@ -151,12 +161,6 @@ namespace HAViz.API.Services
         #endregion
 
         #region Entities
-        //  Get the Filter for the wanted Entities from appsettings.json
-        public List<string>? GetEntityFilter()
-        {
-            return _configuration.GetSection("Entity_Includes").Get<List<string>>();
-        }
-        //  -----------------------------------------------------------------------------
         public async Task<IEnumerable<Entity>?> GetAllEntitiesAsync()
         {
             using (var request = new HttpRequestMessage(HttpMethod.Get, $"{_url}/states"))
